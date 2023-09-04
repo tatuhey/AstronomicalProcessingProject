@@ -10,6 +10,10 @@ namespace AstronomicalProcessingProject
     [ServiceContract]
     internal interface IAstroContract
     {
+        // Server Application
+        // 1.	Create the ServiceContract file called “IAstroContract.cs” which will require an Interface
+        //      that references the AstroMath.DLL and four OperationContract (one for each calculation).
+
         [OperationContract]
         double StarVelocity(double ObsWave, double RestWave);
 
