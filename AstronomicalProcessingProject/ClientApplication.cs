@@ -233,21 +233,60 @@ namespace AstronomicalProcessingProject
 
         }
 
-        
-        
 
+        private void ChangeLanguage(string language)
+        {
+            switch (language)
+            {
+                case "English":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                    break;
+                case "French":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
+                    break;
+                case "German":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
+                    break;
+            }
+            Controls.Clear();
+            InitializeComponent();
+
+            //UpdateLocalisedUI();
+        }
+
+        private void UpdateLocalisedUI()
+        {
+            ResourceManager rm = new ResourceManager("ClientApplication.fr-FR", typeof(ClientApplication).Assembly);
+
+            // Update UI elements with localized text
+            // this.Text = rm.GetString("this.Text");
+            //btnDistance.Text = rm.GetString("btnDistance.Text");
+            //btnEnglish.Text = rm.GetString("btnEnglish.Text");
+            //btnFrench.Text = rm.GetString("btnFrench.Text");
+            //btnGerman.Text = rm.GetString("btnGerman.Text");
+            //btnKelvin.Text = rm.GetString("btnKelvin.Text");
+            //btnRadius.Text = rm.GetString("btnRadius.Text");
+            //btnVelocity.Text = rm.GetString("btnVelocity.Text");
+            //label1.Text = rm.GetString("label1.Text");
+            //label10.Text = rm.GetString("label10.Text");
+            //label11.Text = rm.GetString("label11.Text");
+            //label12.Text = rm.GetString("label12.Text");
+            //label13.Text = rm.GetString("label13.Text");
+            //label2.Text = rm.GetString("label2.Text");
+            //label3.Text = rm.GetString("label3.Text");
+            //label4.Text = rm.GetString("label4.Text");
+            //label5.Text = rm.GetString("label5.Text");
+            //label6.Text = rm.GetString("label6.Text");
+            //label7.Text = rm.GetString("label7.Text");
+            //label8.Text = rm.GetString("label8.Text");
+            //label9.Text = rm.GetString("label9.Text");
+            //rbDark.Text = rm.GetString("rbDark.Text");
+            //rbLight.Text = rm.GetString("rbLight.Text");
+        }
 
         private void btnFrench_Click(object sender, EventArgs e)
         {
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
-
-
-            ResourceManager rm = new ResourceManager(typeof(Resources));
-
-            label1.Text = rm.GetString("label1.Text");
-
-
-            this.Refresh();
+            ChangeLanguage("French");
             //MessageBox.Show("Button works");
         }
     }

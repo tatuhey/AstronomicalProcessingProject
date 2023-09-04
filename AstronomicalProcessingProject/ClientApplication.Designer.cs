@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientApplication));
             this.btnEnglish = new System.Windows.Forms.Button();
             this.btnFrench = new System.Windows.Forms.Button();
             this.btnGerman = new System.Windows.Forms.Button();
@@ -66,309 +67,201 @@
             // 
             // btnEnglish
             // 
-            this.btnEnglish.Location = new System.Drawing.Point(782, 328);
+            resources.ApplyResources(this.btnEnglish, "btnEnglish");
             this.btnEnglish.Name = "btnEnglish";
-            this.btnEnglish.Size = new System.Drawing.Size(75, 51);
-            this.btnEnglish.TabIndex = 0;
-            this.btnEnglish.Text = "English";
             this.btnEnglish.UseVisualStyleBackColor = true;
             // 
             // btnFrench
             // 
-            this.btnFrench.Location = new System.Drawing.Point(863, 328);
+            resources.ApplyResources(this.btnFrench, "btnFrench");
             this.btnFrench.Name = "btnFrench";
-            this.btnFrench.Size = new System.Drawing.Size(75, 51);
-            this.btnFrench.TabIndex = 1;
-            this.btnFrench.Text = "French";
             this.btnFrench.UseVisualStyleBackColor = true;
             this.btnFrench.Click += new System.EventHandler(this.btnFrench_Click);
             // 
             // btnGerman
             // 
-            this.btnGerman.Location = new System.Drawing.Point(944, 328);
+            resources.ApplyResources(this.btnGerman, "btnGerman");
             this.btnGerman.Name = "btnGerman";
-            this.btnGerman.Size = new System.Drawing.Size(75, 51);
-            this.btnGerman.TabIndex = 2;
-            this.btnGerman.Text = "German";
             this.btnGerman.UseVisualStyleBackColor = true;
             // 
             // tbObsWave
             // 
-            this.tbObsWave.Location = new System.Drawing.Point(34, 103);
+            resources.ApplyResources(this.tbObsWave, "tbObsWave");
             this.tbObsWave.Name = "tbObsWave";
-            this.tbObsWave.Size = new System.Drawing.Size(100, 20);
-            this.tbObsWave.TabIndex = 3;
             // 
             // tbRestWave
             // 
-            this.tbRestWave.Location = new System.Drawing.Point(34, 149);
+            resources.ApplyResources(this.tbRestWave, "tbRestWave");
             this.tbRestWave.Name = "tbRestWave";
-            this.tbRestWave.Size = new System.Drawing.Size(100, 20);
-            this.tbRestWave.TabIndex = 4;
             // 
             // tbParallaxAngle
             // 
-            this.tbParallaxAngle.Location = new System.Drawing.Point(182, 103);
+            resources.ApplyResources(this.tbParallaxAngle, "tbParallaxAngle");
             this.tbParallaxAngle.Name = "tbParallaxAngle";
-            this.tbParallaxAngle.Size = new System.Drawing.Size(100, 20);
-            this.tbParallaxAngle.TabIndex = 5;
             // 
             // tbDistance
             // 
-            this.tbDistance.Location = new System.Drawing.Point(182, 237);
+            resources.ApplyResources(this.tbDistance, "tbDistance");
             this.tbDistance.Name = "tbDistance";
-            this.tbDistance.Size = new System.Drawing.Size(100, 20);
-            this.tbDistance.TabIndex = 6;
             // 
             // tbCelcius
             // 
-            this.tbCelcius.Location = new System.Drawing.Point(351, 103);
+            resources.ApplyResources(this.tbCelcius, "tbCelcius");
             this.tbCelcius.Name = "tbCelcius";
-            this.tbCelcius.Size = new System.Drawing.Size(100, 20);
-            this.tbCelcius.TabIndex = 7;
             // 
             // tbKelvin
             // 
-            this.tbKelvin.Location = new System.Drawing.Point(351, 237);
+            resources.ApplyResources(this.tbKelvin, "tbKelvin");
             this.tbKelvin.Name = "tbKelvin";
-            this.tbKelvin.Size = new System.Drawing.Size(100, 20);
-            this.tbKelvin.TabIndex = 8;
             // 
             // tbMassBlackhole
             // 
-            this.tbMassBlackhole.Location = new System.Drawing.Point(602, 103);
+            resources.ApplyResources(this.tbMassBlackhole, "tbMassBlackhole");
             this.tbMassBlackhole.Name = "tbMassBlackhole";
-            this.tbMassBlackhole.Size = new System.Drawing.Size(100, 20);
-            this.tbMassBlackhole.TabIndex = 9;
             // 
             // tbScwarzchild
             // 
-            this.tbScwarzchild.Location = new System.Drawing.Point(602, 237);
+            resources.ApplyResources(this.tbScwarzchild, "tbScwarzchild");
             this.tbScwarzchild.Name = "tbScwarzchild";
-            this.tbScwarzchild.Size = new System.Drawing.Size(100, 20);
-            this.tbScwarzchild.TabIndex = 10;
             // 
             // tbStarVelocity
             // 
-            this.tbStarVelocity.Location = new System.Drawing.Point(34, 237);
+            resources.ApplyResources(this.tbStarVelocity, "tbStarVelocity");
             this.tbStarVelocity.Name = "tbStarVelocity";
-            this.tbStarVelocity.Size = new System.Drawing.Size(100, 20);
-            this.tbStarVelocity.TabIndex = 11;
             // 
             // btnVelocity
             // 
-            this.btnVelocity.Location = new System.Drawing.Point(34, 180);
+            resources.ApplyResources(this.btnVelocity, "btnVelocity");
             this.btnVelocity.Name = "btnVelocity";
-            this.btnVelocity.Size = new System.Drawing.Size(75, 23);
-            this.btnVelocity.TabIndex = 13;
-            this.btnVelocity.Text = "Calculate";
             this.btnVelocity.UseVisualStyleBackColor = true;
             this.btnVelocity.Click += new System.EventHandler(this.btnVelocity_Click);
             // 
             // btnDistance
             // 
-            this.btnDistance.Location = new System.Drawing.Point(182, 180);
+            resources.ApplyResources(this.btnDistance, "btnDistance");
             this.btnDistance.Name = "btnDistance";
-            this.btnDistance.Size = new System.Drawing.Size(75, 23);
-            this.btnDistance.TabIndex = 14;
-            this.btnDistance.Text = "Calculate";
             this.btnDistance.UseVisualStyleBackColor = true;
             this.btnDistance.Click += new System.EventHandler(this.btnDistance_Click);
             // 
             // btnKelvin
             // 
-            this.btnKelvin.Location = new System.Drawing.Point(351, 180);
+            resources.ApplyResources(this.btnKelvin, "btnKelvin");
             this.btnKelvin.Name = "btnKelvin";
-            this.btnKelvin.Size = new System.Drawing.Size(75, 23);
-            this.btnKelvin.TabIndex = 15;
-            this.btnKelvin.Text = "Calculate";
             this.btnKelvin.UseVisualStyleBackColor = true;
             this.btnKelvin.Click += new System.EventHandler(this.btnKelvin_Click);
             // 
             // btnRadius
             // 
-            this.btnRadius.Location = new System.Drawing.Point(602, 180);
+            resources.ApplyResources(this.btnRadius, "btnRadius");
             this.btnRadius.Name = "btnRadius";
-            this.btnRadius.Size = new System.Drawing.Size(75, 23);
-            this.btnRadius.TabIndex = 16;
-            this.btnRadius.Text = "Calculate";
             this.btnRadius.UseVisualStyleBackColor = true;
             this.btnRadius.Click += new System.EventHandler(this.btnRadius_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 87);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 13);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Observed Wavelength";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 133);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 13);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Rest Wavelength (λo)";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(179, 87);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 13);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Parallax Angle (P)";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(348, 87);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 13);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Celsius (°C)";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(599, 87);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 13);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Mass of the Blackhole (M)";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
+            resources.ApplyResources(this.label6, "label6");
             this.label6.BackColor = System.Drawing.SystemColors.Control;
             this.label6.Cursor = System.Windows.Forms.Cursors.Default;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(599, 219);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(128, 13);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Schwarzschild Radius (R)";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(31, 221);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 13);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "Star Velocity (V)";
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(179, 221);
+            resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 13);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Distance (D)";
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(348, 221);
+            resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 13);
-            this.label9.TabIndex = 25;
-            this.label9.Text = "Kelvin (K)";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(29, 43);
+            resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(148, 26);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "Star Velocity";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(177, 43);
+            resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(156, 26);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "Star Distance";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(346, 43);
+            resources.ApplyResources(this.label12, "label12");
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(245, 26);
-            this.label12.TabIndex = 28;
-            this.label12.Text = "Temperature in Kelvin";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(597, 43);
+            resources.ApplyResources(this.label13, "label13");
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(162, 26);
-            this.label13.TabIndex = 29;
-            this.label13.Text = "Event Horizon";
             // 
             // rbLight
             // 
-            this.rbLight.AutoSize = true;
-            this.rbLight.Location = new System.Drawing.Point(6, 19);
+            resources.ApplyResources(this.rbLight, "rbLight");
             this.rbLight.Name = "rbLight";
-            this.rbLight.Size = new System.Drawing.Size(78, 17);
-            this.rbLight.TabIndex = 30;
             this.rbLight.TabStop = true;
-            this.rbLight.Text = "Light Mode";
             this.rbLight.UseVisualStyleBackColor = true;
             this.rbLight.CheckedChanged += new System.EventHandler(this.rbLight_CheckedChanged);
             // 
             // rbDark
             // 
-            this.rbDark.AutoSize = true;
-            this.rbDark.Location = new System.Drawing.Point(6, 42);
+            resources.ApplyResources(this.rbDark, "rbDark");
             this.rbDark.Name = "rbDark";
-            this.rbDark.Size = new System.Drawing.Size(78, 17);
-            this.rbDark.TabIndex = 31;
             this.rbDark.TabStop = true;
-            this.rbDark.Text = "Dark Mode";
             this.rbDark.UseVisualStyleBackColor = true;
             this.rbDark.CheckedChanged += new System.EventHandler(this.rbDark_CheckedChanged);
             // 
             // gbVisualStyle
             // 
+            resources.ApplyResources(this.gbVisualStyle, "gbVisualStyle");
             this.gbVisualStyle.Controls.Add(this.rbLight);
             this.gbVisualStyle.Controls.Add(this.rbDark);
-            this.gbVisualStyle.Location = new System.Drawing.Point(782, 215);
             this.gbVisualStyle.Name = "gbVisualStyle";
-            this.gbVisualStyle.Size = new System.Drawing.Size(108, 69);
-            this.gbVisualStyle.TabIndex = 32;
             this.gbVisualStyle.TabStop = false;
             // 
             // lvData
             // 
+            resources.ApplyResources(this.lvData, "lvData");
             this.lvData.BackColor = System.Drawing.SystemColors.Window;
             this.lvData.HideSelection = false;
-            this.lvData.Location = new System.Drawing.Point(34, 344);
             this.lvData.Name = "lvData";
-            this.lvData.Size = new System.Drawing.Size(693, 261);
-            this.lvData.TabIndex = 33;
             this.lvData.UseCompatibleStateImageBehavior = false;
             // 
             // ClientApplication
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1059, 643);
             this.Controls.Add(this.lvData);
             this.Controls.Add(this.gbVisualStyle);
             this.Controls.Add(this.label13);
@@ -401,7 +294,6 @@
             this.Controls.Add(this.btnFrench);
             this.Controls.Add(this.btnEnglish);
             this.Name = "ClientApplication";
-            this.Text = "Astronomnical Processing";
             this.gbVisualStyle.ResumeLayout(false);
             this.gbVisualStyle.PerformLayout();
             this.ResumeLayout(false);

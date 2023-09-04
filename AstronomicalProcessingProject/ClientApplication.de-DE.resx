@@ -118,115 +118,106 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnEnglish.Text" xml:space="preserve">
-    <value>Anglais</value>
+    <value>Englisch</value>
   </data>
   <data name="btnFrench.Text" xml:space="preserve">
-    <value>Français</value>
+    <value>Französisch</value>
   </data>
   <data name="btnGerman.Text" xml:space="preserve">
-    <value>Allemand</value>
+    <value>Deutsch</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="tbMassBlackhole.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 346</value>
-  </data>
-  <data name="tbScwarzchild.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 480</value>
+  <data name="btnVelocity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 23</value>
   </data>
   <data name="btnVelocity.Text" xml:space="preserve">
-    <value>Calculer</value>
+    <value>Berechnen Sie</value>
+  </data>
+  <data name="btnDistance.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 23</value>
   </data>
   <data name="btnDistance.Text" xml:space="preserve">
-    <value>Calculer</value>
+    <value>Berechnen Sie</value>
+  </data>
+  <data name="btnKelvin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 23</value>
   </data>
   <data name="btnKelvin.Text" xml:space="preserve">
-    <value>Calculer</value>
+    <value>Berechnen Sie</value>
   </data>
-  <data name="btnRadius.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 423</value>
+  <data name="btnRadius.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 23</value>
   </data>
   <data name="btnRadius.Text" xml:space="preserve">
-    <value>Calculer</value>
+    <value>Berechnen Sie</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 13</value>
+    <value>130, 13</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Longueur d'onde observée</value>
+    <value>Beobachtete Wellenlänge</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 13</value>
+    <value>95, 13</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Longueur d'onde au repos</value>
+    <value>Ruhe-Wellenlänge</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 13</value>
+    <value>102, 13</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Angle de parallaxe (P)</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>308, 330</value>
+    <value>Parallaxenwinkel (P)</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 13</value>
+    <value>164, 13</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Masse du trou noir (M)</value>
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>308, 462</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 13</value>
+    <value>Masse des Schwarzen Lochs (M)</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>Rayon de Schwarzschild (R)</value>
+    <value>Schwarzschild-Radius (R)</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 13</value>
+    <value>124, 13</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>Vitesse de l'étoile (V)</value>
+    <value>Sterngeschwindigkeit (V)</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 26</value>
+    <value>251, 26</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
-    <value>Vitesse des étoiles</value>
+    <value>Stern-Geschwindigkeit</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 26</value>
+    <value>182, 26</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
-    <value>Distance de l'étoile</value>
+    <value>Sternentfernung</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 26</value>
+    <value>232, 26</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
-    <value>Température en Kelvin</value>
-  </data>
-  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>306, 286</value>
+    <value>Temperatur in Kelvin</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>262, 26</value>
+    <value>184, 26</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
-    <value>Horizon de l'événement</value>
+    <value>Ereignishorizont</value>
   </data>
   <data name="rbLight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 17</value>
+    <value>87, 17</value>
   </data>
   <data name="rbLight.Text" xml:space="preserve">
-    <value>Mode clair</value>
+    <value>Heller Modus</value>
   </data>
   <data name="rbDark.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 17</value>
+    <value>97, 17</value>
   </data>
   <data name="rbDark.Text" xml:space="preserve">
-    <value>Mode sombre</value>
+    <value>Dunkler Modus</value>
   </data>
 </root>
