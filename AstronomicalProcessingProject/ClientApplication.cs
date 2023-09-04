@@ -21,6 +21,7 @@ namespace AstronomicalProcessingProject
         public ClientApplication()
         {
             InitializeComponent();
+            rbLight.Checked = true;
         }
 
         private void btnVelocity_Click(object sender, EventArgs e)
@@ -37,6 +38,11 @@ namespace AstronomicalProcessingProject
 
                 double starvelocity = channel.StarVelocity(obs, rest);
                 tbStarVelocity.Text = starvelocity.ToString();
+
+                ListViewItem item = new ListViewItem("Velocity");
+                item.SubItems.Add(starvelocity.ToString());
+
+                lvData.Items.Add(item);
             }
             else
             {
@@ -59,6 +65,11 @@ namespace AstronomicalProcessingProject
 
                 double distance = channel.StarDistance(par);
                 tbDistance.Text = distance.ToString();
+
+                ListViewItem item = new ListViewItem("Distance");
+                item.SubItems.Add(distance.ToString());
+
+                lvData.Items.Add(item);
             }
             else
             {
@@ -79,6 +90,11 @@ namespace AstronomicalProcessingProject
 
                 double kelvin = channel.TempInKelvin(cel);
                 tbKelvin.Text = kelvin.ToString();
+
+                ListViewItem item = new ListViewItem("Kelvin");
+                item.SubItems.Add(kelvin.ToString());
+
+                lvData.Items.Add(item);
             }
             else
             {
@@ -99,11 +115,115 @@ namespace AstronomicalProcessingProject
 
                 double rad = channel.EventHorizon(mass);
                 tbScwarzchild.Text = rad.ToString();
+
+                ListViewItem item = new ListViewItem("Scwarzchild Radius");
+                item.SubItems.Add(rad.ToString());
+
+                lvData.Items.Add(item);
             }
             else
             {
                 MessageBox.Show("Invalid input. Please enter valid numeric values.");
             }
+        }
+
+        private void rbDark_CheckedChanged(object sender, EventArgs e)
+        {
+            SetDarkMode();
+        }
+
+        private void rbLight_CheckedChanged(object sender, EventArgs e)
+        {
+            SetLightMode();
+        }
+
+        private void SetDarkMode()
+        {
+            this.BackColor = SystemColors.ControlDarkDark;
+
+            label1.BackColor = SystemColors.ControlDarkDark;
+            label2.BackColor = SystemColors.ControlDarkDark;
+            label3.BackColor = SystemColors.ControlDarkDark;
+            label4.BackColor = SystemColors.ControlDarkDark;
+            label5.BackColor = SystemColors.ControlDarkDark;
+            label6.BackColor = SystemColors.ControlDarkDark;
+            label7.BackColor = SystemColors.ControlDarkDark;
+            label8.BackColor = SystemColors.ControlDarkDark;
+            label9.BackColor = SystemColors.ControlDarkDark;
+            label10.BackColor = SystemColors.ControlDarkDark;
+            label11.BackColor = SystemColors.ControlDarkDark;
+            label12.BackColor = SystemColors.ControlDarkDark;
+            label13.BackColor = SystemColors.ControlDarkDark;
+
+            label1.ForeColor = SystemColors.ControlLight;
+            label2.ForeColor = SystemColors.ControlLight;
+            label3.ForeColor = SystemColors.ControlLight;
+            label4.ForeColor = SystemColors.ControlLight;
+            label5.ForeColor = SystemColors.ControlLight;
+            label6.ForeColor = SystemColors.ControlLight;
+            label7.ForeColor = SystemColors.ControlLight;
+            label8.ForeColor = SystemColors.ControlLight;
+            label9.ForeColor = SystemColors.ControlLight;
+            label10.ForeColor = SystemColors.ControlLight;
+            label11.ForeColor = SystemColors.ControlLight;
+            label12.ForeColor = SystemColors.ControlLight;
+            label13.ForeColor = SystemColors.ControlLight;
+
+            rbDark.BackColor = SystemColors.ControlDarkDark;
+            rbLight.BackColor = SystemColors.ControlDarkDark;
+
+            rbDark.ForeColor = SystemColors.ControlLight;
+            rbLight.ForeColor = SystemColors.ControlLight;
+
+            lvData.BackColor = SystemColors.ControlDark;
+
+            lvData.ForeColor = SystemColors.ControlLight;
+
+        }
+
+
+        private void SetLightMode()
+        {
+            this.BackColor = SystemColors.Control;
+
+            label1.BackColor = SystemColors.Control;
+            label2.BackColor = SystemColors.Control;
+            label3.BackColor = SystemColors.Control;
+            label4.BackColor = SystemColors.Control;
+            label5.BackColor = SystemColors.Control;
+            label6.BackColor = SystemColors.Control;
+            label7.BackColor = SystemColors.Control;
+            label8.BackColor = SystemColors.Control;
+            label9.BackColor = SystemColors.Control;
+            label10.BackColor = SystemColors.Control;
+            label11.BackColor = SystemColors.Control;
+            label12.BackColor = SystemColors.Control;
+            label13.BackColor = SystemColors.Control;
+
+            label1.ForeColor = SystemColors.ControlText;
+            label2.ForeColor = SystemColors.ControlText;
+            label3.ForeColor = SystemColors.ControlText;
+            label4.ForeColor = SystemColors.ControlText;
+            label5.ForeColor = SystemColors.ControlText;
+            label6.ForeColor = SystemColors.ControlText;
+            label7.ForeColor = SystemColors.ControlText;
+            label8.ForeColor = SystemColors.ControlText;
+            label9.ForeColor = SystemColors.ControlText;
+            label10.ForeColor = SystemColors.ControlText;
+            label11.ForeColor = SystemColors.ControlText;
+            label12.ForeColor = SystemColors.ControlText;
+            label13.ForeColor = SystemColors.ControlText;
+
+            rbDark.BackColor = SystemColors.Control;
+            rbLight.BackColor = SystemColors.Control;
+
+            rbDark.ForeColor = SystemColors.ControlText;
+            rbLight.ForeColor = SystemColors.ControlText;
+
+            lvData.BackColor = SystemColors.Window;
+
+            lvData.ForeColor = SystemColors.ControlText;
+
         }
     }
 }

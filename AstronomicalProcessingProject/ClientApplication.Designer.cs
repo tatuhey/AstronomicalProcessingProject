@@ -186,7 +186,7 @@
             // 
             // btnRadius
             // 
-            this.btnRadius.Location = new System.Drawing.Point(602, 173);
+            this.btnRadius.Location = new System.Drawing.Point(602, 180);
             this.btnRadius.Name = "btnRadius";
             this.btnRadius.Size = new System.Drawing.Size(75, 23);
             this.btnRadius.TabIndex = 16;
@@ -242,6 +242,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.Control;
+            this.label6.Cursor = System.Windows.Forms.Cursors.No;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label6.Location = new System.Drawing.Point(599, 219);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(128, 13);
@@ -325,6 +328,7 @@
             this.rbLight.TabStop = true;
             this.rbLight.Text = "Light Mode";
             this.rbLight.UseVisualStyleBackColor = true;
+            this.rbLight.CheckedChanged += new System.EventHandler(this.rbLight_CheckedChanged);
             // 
             // rbDark
             // 
@@ -336,6 +340,7 @@
             this.rbDark.TabStop = true;
             this.rbDark.Text = "Dark Mode";
             this.rbDark.UseVisualStyleBackColor = true;
+            this.rbDark.CheckedChanged += new System.EventHandler(this.rbDark_CheckedChanged);
             // 
             // gbVisualStyle
             // 
@@ -349,6 +354,7 @@
             // 
             // lvData
             // 
+            this.lvData.BackColor = System.Drawing.SystemColors.Window;
             this.lvData.HideSelection = false;
             this.lvData.Location = new System.Drawing.Point(34, 344);
             this.lvData.Name = "lvData";
@@ -360,6 +366,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1059, 643);
             this.Controls.Add(this.lvData);
             this.Controls.Add(this.gbVisualStyle);
