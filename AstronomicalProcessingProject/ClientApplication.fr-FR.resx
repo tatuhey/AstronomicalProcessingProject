@@ -117,73 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="$this.text" xml:space="preserve">
+  <data name="$this.Text" xml:space="preserve">
     <value>Traitement Astronomique</value>
   </data>
-  <data name="btnDistance.text" xml:space="preserve">
+  <data name="btnDistance.Text" xml:space="preserve">
     <value>Calculer</value>
   </data>
-  <data name="btnEnglish.text" xml:space="preserve">
+  <data name="btnEnglish.Text" xml:space="preserve">
     <value>Anglais</value>
   </data>
-  <data name="btnFrench.text" xml:space="preserve">
+  <data name="btnFrench.Text" xml:space="preserve">
     <value>Français</value>
   </data>
-  <data name="btnGerman.text" xml:space="preserve">
+  <data name="btnGerman.Text" xml:space="preserve">
     <value>Allemand</value>
   </data>
-  <data name="btnKelvin.text" xml:space="preserve">
+  <data name="btnKelvin.Text" xml:space="preserve">
     <value>Calculer</value>
   </data>
-  <data name="btnRadius.text" xml:space="preserve">
+  <data name="btnRadius.Text" xml:space="preserve">
     <value>Calculer</value>
   </data>
-  <data name="btnVelocity.text" xml:space="preserve">
+  <data name="btnVelocity.Text" xml:space="preserve">
     <value>Calculer</value>
   </data>
-  <data name="label1.text" xml:space="preserve">
+  <data name="label1.Text" xml:space="preserve">
     <value>Longueur d'onde observée</value>
   </data>
-  <data name="label10.text" xml:space="preserve">
+  <data name="label10.Text" xml:space="preserve">
     <value>Vitesse des étoiles</value>
   </data>
-  <data name="label11.text" xml:space="preserve">
+  <data name="label11.Text" xml:space="preserve">
     <value>Distance de l'étoile</value>
   </data>
-  <data name="label12.text" xml:space="preserve">
+  <data name="label12.Text" xml:space="preserve">
     <value>Température en Kelvin</value>
   </data>
-  <data name="label13.text" xml:space="preserve">
+  <data name="label13.Text" xml:space="preserve">
     <value>Horizon de l'événement</value>
   </data>
-  <data name="label2.text" xml:space="preserve">
+  <data name="label2.Text" xml:space="preserve">
     <value>Longueur d'onde au repos</value>
   </data>
-  <data name="label3.text" xml:space="preserve">
+  <data name="label3.Text" xml:space="preserve">
     <value>Angle de parallaxe (P)</value>
   </data>
-  <data name="label4.text" xml:space="preserve">
+  <data name="label4.Text" xml:space="preserve">
     <value>Celsius (°C)</value>
   </data>
-  <data name="label5.text" xml:space="preserve">
+  <data name="label5.Text" xml:space="preserve">
     <value>Masse du trou noir (M)</value>
   </data>
-  <data name="label6.text" xml:space="preserve">
+  <data name="label6.Text" xml:space="preserve">
     <value>Rayon de Schwarzschild (R)</value>
   </data>
-  <data name="label7.text" xml:space="preserve">
+  <data name="label7.Text" xml:space="preserve">
     <value>Vitesse de l'étoile (V)</value>
   </data>
-  <data name="label8.text" xml:space="preserve">
+  <data name="label8.Text" xml:space="preserve">
     <value>Distance (D)</value>
   </data>
-  <data name="label9.text" xml:space="preserve">
+  <data name="label9.Text" xml:space="preserve">
     <value>Kelvin (K)</value>
   </data>
-  <data name="rbDark.text" xml:space="preserve">
+  <data name="rbDark.Text" xml:space="preserve">
     <value>Mode sombre</value>
   </data>
-  <data name="rbLight.text" xml:space="preserve">
+  <data name="rbLight.Text" xml:space="preserve">
     <value>Mode clair</value>
   </data>
 </root>

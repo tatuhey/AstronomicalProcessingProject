@@ -233,11 +233,22 @@ namespace AstronomicalProcessingProject
 
         }
 
+        
+        
+
+
         private void btnFrench_Click(object sender, EventArgs e)
         {
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
+
+
+            ResourceManager rm = new ResourceManager(typeof(Resources));
+
+            label1.Text = rm.GetString("label1.Text");
+
+
             this.Refresh();
-            MessageBox.Show("Button works");
+            //MessageBox.Show("Button works");
         }
     }
 
