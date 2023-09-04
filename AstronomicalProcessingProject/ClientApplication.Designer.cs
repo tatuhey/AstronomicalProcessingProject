@@ -1,6 +1,6 @@
 ﻿namespace AstronomicalProcessingProject
 {
-    partial class Form1
+    partial class ClientApplication
     {
         /// <summary>
         /// Required designer variable.

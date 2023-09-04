@@ -7,13 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AstroMath;
 
 namespace AstronomicalProcessingProject
 {
-    public partial class Form1 : Form
+    public partial class ClientApplication : Form
     {
-        public Form1()
+        public ClientApplication()
         {
             InitializeComponent();
         }
