@@ -243,7 +243,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.Control;
-            this.label6.Cursor = System.Windows.Forms.Cursors.No;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Default;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label6.Location = new System.Drawing.Point(599, 219);
             this.label6.Name = "label6";
