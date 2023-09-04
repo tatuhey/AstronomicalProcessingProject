@@ -7,7 +7,12 @@ using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
+using System.Resources;
+using System.Globalization;
+using AstronomicalProcessingProject.Properties;
+using System.Runtime.InteropServices;
 
 // Raihan Khalil Abdillah
 // 30065695
@@ -23,6 +28,8 @@ namespace AstronomicalProcessingProject
             InitializeComponent();
             rbLight.Checked = true;
         }
+
+
 
         private void btnVelocity_Click(object sender, EventArgs e)
         {
@@ -225,5 +232,14 @@ namespace AstronomicalProcessingProject
             lvData.ForeColor = SystemColors.ControlText;
 
         }
+
+        private void btnFrench_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
+            this.Refresh();
+            MessageBox.Show("Button works");
+        }
     }
+
+
 }

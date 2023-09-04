@@ -81,6 +81,7 @@
             this.btnFrench.TabIndex = 1;
             this.btnFrench.Text = "French";
             this.btnFrench.UseVisualStyleBackColor = true;
+            this.btnFrench.Click += new System.EventHandler(this.btnFrench_Click);
             // 
             // btnGerman
             // 
