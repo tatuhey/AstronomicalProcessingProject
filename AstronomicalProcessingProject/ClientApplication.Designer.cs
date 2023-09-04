@@ -172,6 +172,7 @@
             this.btnDistance.TabIndex = 14;
             this.btnDistance.Text = "Calculate";
             this.btnDistance.UseVisualStyleBackColor = true;
+            this.btnDistance.Click += new System.EventHandler(this.btnDistance_Click);
             // 
             // btnKelvin
             // 
@@ -181,6 +182,7 @@
             this.btnKelvin.TabIndex = 15;
             this.btnKelvin.Text = "Calculate";
             this.btnKelvin.UseVisualStyleBackColor = true;
+            this.btnKelvin.Click += new System.EventHandler(this.btnKelvin_Click);
             // 
             // btnRadius
             // 
@@ -190,6 +192,7 @@
             this.btnRadius.TabIndex = 16;
             this.btnRadius.Text = "Calculate";
             this.btnRadius.UseVisualStyleBackColor = true;
+            this.btnRadius.Click += new System.EventHandler(this.btnRadius_Click);
             // 
             // label1
             // 
