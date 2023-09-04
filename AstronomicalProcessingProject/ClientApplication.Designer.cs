@@ -70,6 +70,7 @@
             resources.ApplyResources(this.btnEnglish, "btnEnglish");
             this.btnEnglish.Name = "btnEnglish";
             this.btnEnglish.UseVisualStyleBackColor = true;
+            this.btnEnglish.Click += new System.EventHandler(this.btnEnglish_Click);
             // 
             // btnFrench
             // 
@@ -83,6 +84,7 @@
             resources.ApplyResources(this.btnGerman, "btnGerman");
             this.btnGerman.Name = "btnGerman";
             this.btnGerman.UseVisualStyleBackColor = true;
+            this.btnGerman.Click += new System.EventHandler(this.btnGerman_Click);
             // 
             // tbObsWave
             // 
@@ -243,17 +245,17 @@
             // 
             // gbVisualStyle
             // 
-            resources.ApplyResources(this.gbVisualStyle, "gbVisualStyle");
             this.gbVisualStyle.Controls.Add(this.rbLight);
             this.gbVisualStyle.Controls.Add(this.rbDark);
+            resources.ApplyResources(this.gbVisualStyle, "gbVisualStyle");
             this.gbVisualStyle.Name = "gbVisualStyle";
             this.gbVisualStyle.TabStop = false;
             // 
             // lvData
             // 
-            resources.ApplyResources(this.lvData, "lvData");
             this.lvData.BackColor = System.Drawing.SystemColors.Window;
             this.lvData.HideSelection = false;
+            resources.ApplyResources(this.lvData, "lvData");
             this.lvData.Name = "lvData";
             this.lvData.UseCompatibleStateImageBehavior = false;
             // 
