@@ -9,6 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Raihan Khalil Abdillah
+// 30065695
+// Assessment 02 of Complex Data Structures - 
+// 28/08/23 - 
+
 namespace AstronomicalProcessingProject
 {
     public partial class ClientApplication : Form
