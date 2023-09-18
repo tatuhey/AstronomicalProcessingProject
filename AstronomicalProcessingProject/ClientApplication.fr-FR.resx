@@ -229,4 +229,10 @@
   <data name="rbDark.Text" xml:space="preserve">
     <value>Mode sombre</value>
   </data>
+  <data name="lvColumn1.Text" xml:space="preserve">
+    <value>Vitesse de l'étoile (V)</value>
+  </data>
+  <data name="lvColumn4.Text" xml:space="preserve">
+    <value>Rayon de Schwarzschild (R)</value>
+  </data>
 </root>

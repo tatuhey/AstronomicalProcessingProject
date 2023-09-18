@@ -118,11 +118,33 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnEnglish.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAAAgCAMAAACVQ462AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAkFBMVEXVR17wv8f////U2uZfc6AEJGsB
+        IWlWa5v0z9XIEC4CImpOZJbN0+L44OTecILJFDHWS2LxxMv33OHcaHvJEzDS2OVVapoDI2qUosCJmLlW
+        bJze4uz66u3poKzbYnbaYHTjhJT11Nr88fPi5u5YbZzrqrT22t7kipnaYXXmlaL77vH65uryx87XUGbI
+        EjD32t+7brXxAAAAB3RJTUUH5wMCAQcisd+O1QAAAUdJREFUSEvtldlywjAMRUVKm5huCRCWbqYFukP/
+        /++qyGpiW3ImM+1j7wsg33uwJ5IDMMoanYxPzyLlWWFIRZZzqdXk/OLy6toYGIExZaUj0gCMT2dzl4Sf
+        L6h6sWQHKQVYLuo2joCatyIROgDjQQK601DBO4gGkG7Qis4sAZoTASlEDNBdBNAXQ0BqnwzQDD4gFfcA
+        ErHqAOtUHAG5p5v17d39g7WbRzJ2gCevul3t2E4CKibUAnoERY/2DrDnn6pwFn6nf8BfAPhpqBr0GLkf
+        VA1qJO5IErYyFZ9frH19e48ArvoRtzLPBAqHiYyfB2OO9iscpmAlGCb+FHExztEqx7wLRRjEhSIcjQig
+        LypXmuJCQIodA3Rnc62LopMEaAio/cKwF0uQoEaqSmPms+nwVxshXAoBcvNOKUB4EOB/F/E+QIeoym/1
+        OUgIw41GPwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnEnglish.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnEnglish.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
   <data name="btnEnglish.Location" type="System.Drawing.Point, System.Drawing">
     <value>642, 452</value>
   </data>
   <data name="btnEnglish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 51</value>
+    <value>90, 58</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnEnglish.TabIndex" type="System.Int32, mscorlib">
@@ -143,11 +165,26 @@
   <data name="&gt;&gt;btnEnglish.ZOrder" xml:space="preserve">
     <value>30</value>
   </data>
+  <data name="btnFrench.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAAArCAYAAADIWo5HAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5wgQDyETpIGOxAAAAI5JREFU
+        aEPt0LENwzAMRFFtoNmTyht5CFfewMgCSqOS3bEx8Aj8nvfGGJ/V3XU952q+3/c47zFXdwCqAWkAAAAA
+        sP9uOwAAAACoBqQBqAakAQAAAMD+u+0AAAAAoBqQBqAakAYAAAAA+++2AwAAAIBqQBqAakAaAAAAAOy/
+        2w4AAAAAqgFpAKoBae8BmOsP7cLIgFIlo5gAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnFrench.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnFrench.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
   <data name="btnFrench.Location" type="System.Drawing.Point, System.Drawing">
-    <value>722, 452</value>
+    <value>738, 452</value>
   </data>
   <data name="btnFrench.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 51</value>
+    <value>90, 58</value>
   </data>
   <data name="btnFrench.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -167,11 +204,25 @@
   <data name="&gt;&gt;btnFrench.ZOrder" xml:space="preserve">
     <value>29</value>
   </data>
+  <data name="btnGerman.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAAAmBAMAAACG6oCqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAElBMVEUAAABKAADdAAD0igD/zgD///80
+        cvsrAAAAB3RJTUUH5wcNFAgGvUqhxgAAACVJREFUOMtjGAWDBwgSAAxKBMCoAvopMCYAGFwIgFEFdFLg
+        4gIAILmhgZ+4aN0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnGerman.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btnGerman.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
   <data name="btnGerman.Location" type="System.Drawing.Point, System.Drawing">
-    <value>803, 452</value>
+    <value>834, 452</value>
   </data>
   <data name="btnGerman.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 51</value>
+    <value>90, 58</value>
   </data>
   <data name="btnGerman.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -935,6 +986,30 @@
   <data name="&gt;&gt;lvData.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="lvColumn1.Text" xml:space="preserve">
+    <value>Star Velocity (V)</value>
+  </data>
+  <data name="lvColumn1.Width" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <data name="lvColumn2.Text" xml:space="preserve">
+    <value>Kelvin (K)</value>
+  </data>
+  <data name="lvColumn2.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="lvColumn3.Text" xml:space="preserve">
+    <value>Distance (D)</value>
+  </data>
+  <data name="lvColumn3.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="lvColumn4.Text" xml:space="preserve">
+    <value>Schwarzchild Radius (R)</value>
+  </data>
+  <data name="lvColumn4.Width" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -946,6 +1021,30 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Astronomnical Processing</value>
+  </data>
+  <data name="&gt;&gt;lvColumn1.Name" xml:space="preserve">
+    <value>lvColumn1</value>
+  </data>
+  <data name="&gt;&gt;lvColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvColumn2.Name" xml:space="preserve">
+    <value>lvColumn2</value>
+  </data>
+  <data name="&gt;&gt;lvColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvColumn3.Name" xml:space="preserve">
+    <value>lvColumn3</value>
+  </data>
+  <data name="&gt;&gt;lvColumn3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvColumn4.Name" xml:space="preserve">
+    <value>lvColumn4</value>
+  </data>
+  <data name="&gt;&gt;lvColumn4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ClientApplication</value>

@@ -56,6 +56,9 @@
     <Compile Include="IAstroContract.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="ClientApplication.de-DE.resx">
       <DependentUpon>ClientApplication.cs</DependentUpon>
     </EmbeddedResource>

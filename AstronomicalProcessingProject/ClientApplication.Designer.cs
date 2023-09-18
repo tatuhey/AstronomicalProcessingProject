@@ -62,12 +62,17 @@
             this.rbDark = new System.Windows.Forms.RadioButton();
             this.gbVisualStyle = new System.Windows.Forms.GroupBox();
             this.lvData = new System.Windows.Forms.ListView();
+            this.lvColumn1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvColumn2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvColumn3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lvColumn4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.gbVisualStyle.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEnglish
             // 
             resources.ApplyResources(this.btnEnglish, "btnEnglish");
+            this.btnEnglish.ForeColor = System.Drawing.SystemColors.Control;
             this.btnEnglish.Name = "btnEnglish";
             this.btnEnglish.UseVisualStyleBackColor = true;
             this.btnEnglish.Click += new System.EventHandler(this.btnEnglish_Click);
@@ -82,6 +87,7 @@
             // btnGerman
             // 
             resources.ApplyResources(this.btnGerman, "btnGerman");
+            this.btnGerman.ForeColor = System.Drawing.SystemColors.Control;
             this.btnGerman.Name = "btnGerman";
             this.btnGerman.UseVisualStyleBackColor = true;
             this.btnGerman.Click += new System.EventHandler(this.btnGerman_Click);
@@ -254,10 +260,32 @@
             // lvData
             // 
             this.lvData.BackColor = System.Drawing.SystemColors.Window;
+            this.lvData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvColumn1,
+            this.lvColumn2,
+            this.lvColumn3,
+            this.lvColumn4});
             this.lvData.HideSelection = false;
             resources.ApplyResources(this.lvData, "lvData");
             this.lvData.Name = "lvData";
             this.lvData.UseCompatibleStateImageBehavior = false;
+            this.lvData.View = System.Windows.Forms.View.Details;
+            // 
+            // lvColumn1
+            // 
+            resources.ApplyResources(this.lvColumn1, "lvColumn1");
+            // 
+            // lvColumn2
+            // 
+            resources.ApplyResources(this.lvColumn2, "lvColumn2");
+            // 
+            // lvColumn3
+            // 
+            resources.ApplyResources(this.lvColumn3, "lvColumn3");
+            // 
+            // lvColumn4
+            // 
+            resources.ApplyResources(this.lvColumn4, "lvColumn4");
             // 
             // ClientApplication
             // 
@@ -338,6 +366,10 @@
         private System.Windows.Forms.RadioButton rbDark;
         private System.Windows.Forms.GroupBox gbVisualStyle;
         private System.Windows.Forms.ListView lvData;
+        private System.Windows.Forms.ColumnHeader lvColumn1;
+        private System.Windows.Forms.ColumnHeader lvColumn2;
+        private System.Windows.Forms.ColumnHeader lvColumn3;
+        private System.Windows.Forms.ColumnHeader lvColumn4;
     }
 }
 

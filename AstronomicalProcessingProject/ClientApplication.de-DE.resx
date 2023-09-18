@@ -182,7 +182,7 @@
     <value>124, 13</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>Sterngeschwindigkeit (V)</value>
+    <value>Sterngeschwindigkeit (G)</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>251, 26</value>
@@ -219,5 +219,14 @@
   </data>
   <data name="rbDark.Text" xml:space="preserve">
     <value>Dunkler Modus</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Entfernung (E)</value>
+  </data>
+  <data name="lvColumn1.Text" xml:space="preserve">
+    <value>Sternentfernung (E)</value>
+  </data>
+  <data name="lvColumn4.Text" xml:space="preserve">
+    <value>Schwarzschild-Radius (R)</value>
   </data>
 </root>

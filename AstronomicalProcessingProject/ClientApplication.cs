@@ -26,9 +26,19 @@ namespace AstronomicalProcessingProject
         public ClientApplication()
         {
             InitializeComponent();
+            ConnectToServer();
             rbLight.Checked = true;
         }
 
+        private IAstroContract channel;
+
+        private void ConnectToServer()
+        {
+            string address = "net.pipe://localhost/pipemynumbers";
+            NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
+            EndpointAddress ep = new EndpointAddress(address);
+            channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
+        }
 
         private void btnVelocity_Click(object sender, EventArgs e)
         {
@@ -37,18 +47,15 @@ namespace AstronomicalProcessingProject
 
             if (double.TryParse(tbObsWave.Text, out obs) && double.TryParse(tbRestWave.Text, out rest)) 
             {
-                string address = "net.pipe://localhost/pipemynumbers";
-                NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
-                EndpointAddress ep = new EndpointAddress(address);
-                IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
 
                 double starvelocity = channel.StarVelocity(obs, rest);
                 tbStarVelocity.Text = starvelocity.ToString();
 
-                ListViewItem item = new ListViewItem("Velocity");
-                item.SubItems.Add(starvelocity.ToString());
+                ListViewItem item = new ListViewItem();
+                item.SubItems[0].Text = starvelocity.ToString();
 
                 lvData.Items.Add(item);
+
             }
             else
             {
@@ -64,16 +71,16 @@ namespace AstronomicalProcessingProject
 
             if (double.TryParse(tbParallaxAngle.Text, out par))
             {
-                string address = "net.pipe://localhost/pipemynumbers";
-                NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
-                EndpointAddress ep = new EndpointAddress(address);
-                IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
-
                 double distance = channel.StarDistance(par);
                 tbDistance.Text = distance.ToString();
 
-                ListViewItem item = new ListViewItem("Distance");
+                ListViewItem item = new ListViewItem();
+                item.SubItems.Add(""); // Empty for lvColumn1
+                item.SubItems.Add("");
                 item.SubItems.Add(distance.ToString());
+                item.SubItems.Add("");
+                //item.SubItems[2].Text = distance.ToString();
+
 
                 lvData.Items.Add(item);
             }
@@ -89,17 +96,16 @@ namespace AstronomicalProcessingProject
 
             if (double.TryParse(tbCelcius.Text, out cel))
             {
-                string address = "net.pipe://localhost/pipemynumbers";
-                NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
-                EndpointAddress ep = new EndpointAddress(address);
-                IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
-
                 double kelvin = channel.TempInKelvin(cel);
                 tbKelvin.Text = kelvin.ToString();
 
-                ListViewItem item = new ListViewItem("Kelvin");
+                ListViewItem item = new ListViewItem();
+                item.SubItems.Add("");
                 item.SubItems.Add(kelvin.ToString());
+                item.SubItems.Add("");
+                item.SubItems.Add("");
 
+                //item.SubItems[1].Text = kelvin.ToString();
                 lvData.Items.Add(item);
             }
             else
@@ -114,16 +120,16 @@ namespace AstronomicalProcessingProject
 
             if (double.TryParse(tbMassBlackhole.Text, out mass))
             {
-                string address = "net.pipe://localhost/pipemynumbers";
-                NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
-                EndpointAddress ep = new EndpointAddress(address);
-                IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
-
                 double rad = channel.EventHorizon(mass);
                 tbScwarzchild.Text = rad.ToString();
 
-                ListViewItem item = new ListViewItem("Scwarzchild Radius");
+                ListViewItem item = new ListViewItem();
+                item.SubItems.Add(""); // Empty for lvColumn2
+                item.SubItems.Add(""); // Empty for lvColumn3
+                item.SubItems.Add("");
                 item.SubItems.Add(rad.ToString());
+
+                //item.SubItems[3].Text = rad.ToString();
 
                 lvData.Items.Add(item);
             }
@@ -251,19 +257,33 @@ namespace AstronomicalProcessingProject
             InitializeComponent();
         }
 
+        private void NewButtons()
+        {
+            CustomButton btnEnglish = new CustomButton();
+            btnEnglish.Text = "English";
+            btnEnglish.OutlineColor = Color.White; // Set the outline color
+            btnEnglish.FillColor = Color.Black;    // Set the fill color
+            btnEnglish.Click += btnEnglish_Click;
+            // Add the button to your form's controls collection
+            this.Controls.Add(btnEnglish);
+        }
+
         private void btnFrench_Click(object sender, EventArgs e)
         {
             ChangeLanguage("French");
+            rbLight.Checked = true;
         }
 
         private void btnEnglish_Click(object sender, EventArgs e)
         {
             ChangeLanguage("English");
+            rbLight.Checked = true;
         }
 
         private void btnGerman_Click(object sender, EventArgs e)
         {
             ChangeLanguage("German");
+            rbLight.Checked = true;
         }
     }
 
