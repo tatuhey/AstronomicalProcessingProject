@@ -256,13 +256,13 @@
     <value>Calcul</value>
   </data>
   <data name="lightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>148, 22</value>
   </data>
   <data name="lightModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Mode clair</value>
   </data>
   <data name="darkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>148, 22</value>
   </data>
   <data name="darkModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Mode sombre</value>
@@ -292,19 +292,19 @@
     <value>Affichage</value>
   </data>
   <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>125, 22</value>
   </data>
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
     <value>Anglais</value>
   </data>
   <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>125, 22</value>
   </data>
   <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
     <value>Français</value>
   </data>
   <data name="germanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>125, 22</value>
   </data>
   <data name="germanToolStripMenuItem.Text" xml:space="preserve">
     <value>Allemand</value>
@@ -314,5 +314,8 @@
   </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>Langue</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Traitement Astronomique</value>
   </data>
 </root>

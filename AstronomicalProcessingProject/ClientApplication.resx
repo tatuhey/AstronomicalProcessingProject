@@ -743,54 +743,6 @@
   <data name="&gt;&gt;rbDark.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;btnBackgroundColour.Name" xml:space="preserve">
-    <value>btnBackgroundColour</value>
-  </data>
-  <data name="&gt;&gt;btnBackgroundColour.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnBackgroundColour.Parent" xml:space="preserve">
-    <value>gbVisualStyle</value>
-  </data>
-  <data name="&gt;&gt;btnBackgroundColour.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnFontColour.Name" xml:space="preserve">
-    <value>btnFontColour</value>
-  </data>
-  <data name="&gt;&gt;btnFontColour.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnFontColour.Parent" xml:space="preserve">
-    <value>gbVisualStyle</value>
-  </data>
-  <data name="&gt;&gt;btnFontColour.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gbVisualStyle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 342</value>
-  </data>
-  <data name="gbVisualStyle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>282, 89</value>
-  </data>
-  <data name="gbVisualStyle.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="gbVisualStyle.Text" xml:space="preserve">
-    <value>Colour</value>
-  </data>
-  <data name="&gt;&gt;gbVisualStyle.Name" xml:space="preserve">
-    <value>gbVisualStyle</value>
-  </data>
-  <data name="&gt;&gt;gbVisualStyle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbVisualStyle.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gbVisualStyle.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="btnBackgroundColour.Location" type="System.Drawing.Point, System.Drawing">
     <value>192, 28</value>
   </data>
@@ -839,26 +791,29 @@
   <data name="&gt;&gt;btnFontColour.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="lvData.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 199</value>
+  <data name="gbVisualStyle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 342</value>
   </data>
-  <data name="lvData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>800, 137</value>
+  <data name="gbVisualStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 89</value>
   </data>
-  <data name="lvData.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+  <data name="gbVisualStyle.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
   </data>
-  <data name="&gt;&gt;lvData.Name" xml:space="preserve">
-    <value>lvData</value>
+  <data name="gbVisualStyle.Text" xml:space="preserve">
+    <value>Colour</value>
   </data>
-  <data name="&gt;&gt;lvData.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;gbVisualStyle.Name" xml:space="preserve">
+    <value>gbVisualStyle</value>
   </data>
-  <data name="&gt;&gt;lvData.Parent" xml:space="preserve">
+  <data name="&gt;&gt;gbVisualStyle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbVisualStyle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lvData.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;gbVisualStyle.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="lvColumn1.Text" xml:space="preserve">
     <value>Star Velocity (V)</value>
@@ -883,6 +838,27 @@
   </data>
   <data name="lvColumn4.Width" type="System.Int32, mscorlib">
     <value>180</value>
+  </data>
+  <data name="lvData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 199</value>
+  </data>
+  <data name="lvData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 137</value>
+  </data>
+  <data name="lvData.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;lvData.Name" xml:space="preserve">
+    <value>lvData</value>
+  </data>
+  <data name="&gt;&gt;lvData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lvData.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lvData.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="gbLanguages.Location" type="System.Drawing.Point, System.Drawing">
     <value>300, 342</value>
@@ -935,6 +911,18 @@
   <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="lightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="lightModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Light Mode</value>
+  </data>
+  <data name="darkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="darkModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dark Mode</value>
+  </data>
   <data name="lightDarkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>177, 22</value>
   </data>
@@ -942,13 +930,13 @@
     <value>Light/Dark Mode</value>
   </data>
   <data name="fontColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>177, 22</value>
   </data>
   <data name="fontColourToolStripMenuItem.Text" xml:space="preserve">
     <value>Font Colour</value>
   </data>
   <data name="backgroundColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>177, 22</value>
   </data>
   <data name="backgroundColourToolStripMenuItem.Text" xml:space="preserve">
     <value>Background Colour</value>
@@ -958,6 +946,24 @@
   </data>
   <data name="viewToolStripMenuItem.Text" xml:space="preserve">
     <value>View</value>
+  </data>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="germanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 22</value>
+  </data>
+  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
+    <value>German</value>
   </data>
   <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 20</value>
@@ -989,36 +995,6 @@
   <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="lightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 22</value>
-  </data>
-  <data name="lightModeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Light Mode</value>
-  </data>
-  <data name="darkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 22</value>
-  </data>
-  <data name="darkModeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Dark Mode</value>
-  </data>
-  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
-    <value>French</value>
-  </data>
-  <data name="germanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 22</value>
-  </data>
-  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
-    <value>German</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -1029,7 +1005,7 @@
     <value>824, 449</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Astronomnical Processing</value>
+    <value>Astronomical Processing</value>
   </data>
   <data name="&gt;&gt;lvColumn1.Name" xml:space="preserve">
     <value>lvColumn1</value>

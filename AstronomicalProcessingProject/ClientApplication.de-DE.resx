@@ -234,14 +234,14 @@
   <data name="rbDark.Text" xml:space="preserve">
     <value>Dunkler Modus</value>
   </data>
-  <data name="gbVisualStyle.Text" xml:space="preserve">
-    <value>Farbe</value>
-  </data>
   <data name="btnBackgroundColour.Text" xml:space="preserve">
     <value>Hintergrundfarbe</value>
   </data>
   <data name="btnFontColour.Text" xml:space="preserve">
     <value>Schriftfarbe</value>
+  </data>
+  <data name="gbVisualStyle.Text" xml:space="preserve">
+    <value>Farbe</value>
   </data>
   <data name="lvColumn1.Text" xml:space="preserve">
     <value>Sternentfernung (E)</value>
@@ -255,29 +255,23 @@
   <data name="gbCalculation.Text" xml:space="preserve">
     <value>Berechnung</value>
   </data>
-  <data name="viewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 20</value>
+  <data name="lightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
   </data>
-  <data name="viewToolStripMenuItem.Text" xml:space="preserve">
-    <value>Ansicht</value>
+  <data name="lightModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Heller Modus</value>
+  </data>
+  <data name="darkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="darkModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dunkler Modus</value>
   </data>
   <data name="lightDarkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>191, 22</value>
   </data>
   <data name="lightDarkModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Heller/Dunkler Modus</value>
-  </data>
-  <data name="lightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="lightModeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Heller Modus</value>
-  </data>
-  <data name="darkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="darkModeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Dunkler Modus</value>
   </data>
   <data name="fontColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>191, 22</value>
@@ -291,28 +285,37 @@
   <data name="backgroundColourToolStripMenuItem.Text" xml:space="preserve">
     <value>Hintergrundfarbe</value>
   </data>
+  <data name="viewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="viewToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ansicht</value>
+  </data>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Englische</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>Französische</value>
+  </data>
+  <data name="germanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
+  </data>
+  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
+    <value>Deutsche</value>
+  </data>
   <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 20</value>
   </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>Sprache</value>
   </data>
-  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
-    <value>Englische</value>
-  </data>
-  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
-    <value>Französische</value>
-  </data>
-  <data name="germanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
-    <value>Deutsche</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Astronomische Bearbeitung</value>
   </data>
 </root>
