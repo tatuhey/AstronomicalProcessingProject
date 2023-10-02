@@ -234,6 +234,9 @@
   <data name="rbDark.Text" xml:space="preserve">
     <value>Dunkler Modus</value>
   </data>
+  <data name="btnButtonColour.Text" xml:space="preserve">
+    <value>Schaltflächenfarbe</value>
+  </data>
   <data name="btnBackgroundColour.Text" xml:space="preserve">
     <value>Hintergrundfarbe</value>
   </data>
@@ -273,17 +276,29 @@
   <data name="lightDarkModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Heller/Dunkler Modus</value>
   </data>
+  <data name="backgroundColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="backgroundColourToolStripMenuItem.Text" xml:space="preserve">
+    <value>Hintergrundfarbe</value>
+  </data>
+  <data name="buttonColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="buttonColourToolStripMenuItem.Text" xml:space="preserve">
+    <value>Schaltflächenfarbe</value>
+  </data>
   <data name="fontColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 22</value>
+    <value>172, 22</value>
   </data>
   <data name="fontColourToolStripMenuItem.Text" xml:space="preserve">
     <value>Schriftfarbe</value>
   </data>
-  <data name="backgroundColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="colourSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>191, 22</value>
   </data>
-  <data name="backgroundColourToolStripMenuItem.Text" xml:space="preserve">
-    <value>Hintergrundfarbe</value>
+  <data name="colourSettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Farbeinstellungen</value>
   </data>
   <data name="viewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 20</value>

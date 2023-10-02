@@ -234,6 +234,9 @@
   <data name="rbDark.Text" xml:space="preserve">
     <value>Mode sombre</value>
   </data>
+  <data name="btnButtonColour.Text" xml:space="preserve">
+    <value>Couleur de bouton</value>
+  </data>
   <data name="btnBackgroundColour.Text" xml:space="preserve">
     <value>Couleur d'arrière-plan</value>
   </data>
@@ -268,22 +271,34 @@
     <value>Mode sombre</value>
   </data>
   <data name="lightDarkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 22</value>
+    <value>192, 22</value>
   </data>
   <data name="lightDarkModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Mode Clair/Sombre</value>
   </data>
+  <data name="backgroundColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="backgroundColourToolStripMenuItem.Text" xml:space="preserve">
+    <value>Couleur de fond</value>
+  </data>
+  <data name="buttonColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="buttonColourToolStripMenuItem.Text" xml:space="preserve">
+    <value>Couleur de bouton</value>
+  </data>
   <data name="fontColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 22</value>
+    <value>174, 22</value>
   </data>
   <data name="fontColourToolStripMenuItem.Text" xml:space="preserve">
     <value>Couleur du texte</value>
   </data>
-  <data name="backgroundColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 22</value>
+  <data name="colourSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 22</value>
   </data>
-  <data name="backgroundColourToolStripMenuItem.Text" xml:space="preserve">
-    <value>Couleur d'arrière-plan</value>
+  <data name="colourSettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Paramètres de couleur</value>
   </data>
   <data name="viewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 20</value>

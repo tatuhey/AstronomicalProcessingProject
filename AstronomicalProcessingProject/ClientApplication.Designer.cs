@@ -53,6 +53,7 @@
             this.rbLight = new System.Windows.Forms.RadioButton();
             this.rbDark = new System.Windows.Forms.RadioButton();
             this.gbVisualStyle = new System.Windows.Forms.GroupBox();
+            this.btnButtonColour = new System.Windows.Forms.Button();
             this.btnBackgroundColour = new System.Windows.Forms.Button();
             this.btnFontColour = new System.Windows.Forms.Button();
             this.lvData = new System.Windows.Forms.ListView();
@@ -67,8 +68,10 @@
             this.lightDarkModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lightModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fontColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colourSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.backgroundColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -218,6 +221,7 @@
             // 
             // gbVisualStyle
             // 
+            this.gbVisualStyle.Controls.Add(this.btnButtonColour);
             this.gbVisualStyle.Controls.Add(this.btnBackgroundColour);
             this.gbVisualStyle.Controls.Add(this.btnFontColour);
             this.gbVisualStyle.Controls.Add(this.rbLight);
@@ -225,6 +229,13 @@
             resources.ApplyResources(this.gbVisualStyle, "gbVisualStyle");
             this.gbVisualStyle.Name = "gbVisualStyle";
             this.gbVisualStyle.TabStop = false;
+            // 
+            // btnButtonColour
+            // 
+            resources.ApplyResources(this.btnButtonColour, "btnButtonColour");
+            this.btnButtonColour.Name = "btnButtonColour";
+            this.btnButtonColour.UseVisualStyleBackColor = true;
+            this.btnButtonColour.Click += new System.EventHandler(this.btnButtonColour_Click);
             // 
             // btnBackgroundColour
             // 
@@ -315,8 +326,7 @@
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lightDarkModeToolStripMenuItem,
-            this.fontColourToolStripMenuItem,
-            this.backgroundColourToolStripMenuItem});
+            this.colourSettingsToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             resources.ApplyResources(this.viewToolStripMenuItem, "viewToolStripMenuItem");
             // 
@@ -340,17 +350,32 @@
             resources.ApplyResources(this.darkModeToolStripMenuItem, "darkModeToolStripMenuItem");
             this.darkModeToolStripMenuItem.Click += new System.EventHandler(this.darkModeToolStripMenuItem_Click);
             // 
-            // fontColourToolStripMenuItem
+            // colourSettingsToolStripMenuItem
             // 
-            this.fontColourToolStripMenuItem.Name = "fontColourToolStripMenuItem";
-            resources.ApplyResources(this.fontColourToolStripMenuItem, "fontColourToolStripMenuItem");
-            this.fontColourToolStripMenuItem.Click += new System.EventHandler(this.fontColourToolStripMenuItem_Click);
+            this.colourSettingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.backgroundColourToolStripMenuItem,
+            this.buttonColourToolStripMenuItem,
+            this.fontColourToolStripMenuItem});
+            this.colourSettingsToolStripMenuItem.Name = "colourSettingsToolStripMenuItem";
+            resources.ApplyResources(this.colourSettingsToolStripMenuItem, "colourSettingsToolStripMenuItem");
             // 
             // backgroundColourToolStripMenuItem
             // 
             this.backgroundColourToolStripMenuItem.Name = "backgroundColourToolStripMenuItem";
             resources.ApplyResources(this.backgroundColourToolStripMenuItem, "backgroundColourToolStripMenuItem");
             this.backgroundColourToolStripMenuItem.Click += new System.EventHandler(this.backgroundColourToolStripMenuItem_Click);
+            // 
+            // buttonColourToolStripMenuItem
+            // 
+            this.buttonColourToolStripMenuItem.Name = "buttonColourToolStripMenuItem";
+            resources.ApplyResources(this.buttonColourToolStripMenuItem, "buttonColourToolStripMenuItem");
+            this.buttonColourToolStripMenuItem.Click += new System.EventHandler(this.buttonColourToolStripMenuItem_Click);
+            // 
+            // fontColourToolStripMenuItem
+            // 
+            this.fontColourToolStripMenuItem.Name = "fontColourToolStripMenuItem";
+            resources.ApplyResources(this.fontColourToolStripMenuItem, "fontColourToolStripMenuItem");
+            this.fontColourToolStripMenuItem.Click += new System.EventHandler(this.fontColourToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
@@ -443,12 +468,15 @@
         private System.Windows.Forms.ToolStripMenuItem lightDarkModeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lightModeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem darkModeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fontColourToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem backgroundColourToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem germanToolStripMenuItem;
+        private System.Windows.Forms.Button btnButtonColour;
+        private System.Windows.Forms.ToolStripMenuItem colourSettingsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backgroundColourToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buttonColourToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fontColourToolStripMenuItem;
     }
 }
 

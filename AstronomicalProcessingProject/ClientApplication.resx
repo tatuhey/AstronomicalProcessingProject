@@ -714,7 +714,7 @@
     <value>gbVisualStyle</value>
   </data>
   <data name="&gt;&gt;rbLight.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="rbDark.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -741,10 +741,34 @@
     <value>gbVisualStyle</value>
   </data>
   <data name="&gt;&gt;rbDark.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
+  </data>
+  <data name="btnButtonColour.Location" type="System.Drawing.Point, System.Drawing">
+    <value>197, 28</value>
+  </data>
+  <data name="btnButtonColour.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 40</value>
+  </data>
+  <data name="btnButtonColour.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="btnButtonColour.Text" xml:space="preserve">
+    <value>Button Colour</value>
+  </data>
+  <data name="&gt;&gt;btnButtonColour.Name" xml:space="preserve">
+    <value>btnButtonColour</value>
+  </data>
+  <data name="&gt;&gt;btnButtonColour.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnButtonColour.Parent" xml:space="preserve">
+    <value>gbVisualStyle</value>
+  </data>
+  <data name="&gt;&gt;btnButtonColour.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="btnBackgroundColour.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 28</value>
+    <value>116, 28</value>
   </data>
   <data name="btnBackgroundColour.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 40</value>
@@ -765,10 +789,10 @@
     <value>gbVisualStyle</value>
   </data>
   <data name="&gt;&gt;btnBackgroundColour.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="btnFontColour.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 28</value>
+    <value>278, 28</value>
   </data>
   <data name="btnFontColour.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 40</value>
@@ -789,13 +813,13 @@
     <value>gbVisualStyle</value>
   </data>
   <data name="&gt;&gt;btnFontColour.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="gbVisualStyle.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 342</value>
   </data>
   <data name="gbVisualStyle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>282, 89</value>
+    <value>359, 89</value>
   </data>
   <data name="gbVisualStyle.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -861,7 +885,7 @@
     <value>2</value>
   </data>
   <data name="gbLanguages.Location" type="System.Drawing.Point, System.Drawing">
-    <value>300, 342</value>
+    <value>518, 342</value>
   </data>
   <data name="gbLanguages.Size" type="System.Drawing.Size, System.Drawing">
     <value>294, 89</value>
@@ -908,9 +932,9 @@
   <data name="&gt;&gt;gbCalculation.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing">
+  <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </data>
+  </metadata>
   <data name="lightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 22</value>
   </data>
@@ -924,10 +948,22 @@
     <value>Dark Mode</value>
   </data>
   <data name="lightDarkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 22</value>
+    <value>164, 22</value>
   </data>
   <data name="lightDarkModeToolStripMenuItem.Text" xml:space="preserve">
     <value>Light/Dark Mode</value>
+  </data>
+  <data name="backgroundColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 22</value>
+  </data>
+  <data name="backgroundColourToolStripMenuItem.Text" xml:space="preserve">
+    <value>Background Colour</value>
+  </data>
+  <data name="buttonColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 22</value>
+  </data>
+  <data name="buttonColourToolStripMenuItem.Text" xml:space="preserve">
+    <value>Button Colour</value>
   </data>
   <data name="fontColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>177, 22</value>
@@ -935,11 +971,11 @@
   <data name="fontColourToolStripMenuItem.Text" xml:space="preserve">
     <value>Font Colour</value>
   </data>
-  <data name="backgroundColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 22</value>
+  <data name="colourSettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 22</value>
   </data>
-  <data name="backgroundColourToolStripMenuItem.Text" xml:space="preserve">
-    <value>Background Colour</value>
+  <data name="colourSettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Colour Settings</value>
   </data>
   <data name="viewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 20</value>
@@ -995,9 +1031,9 @@
   <data name="&gt;&gt;menuStrip.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </data>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
@@ -1055,16 +1091,28 @@
   <data name="&gt;&gt;darkModeToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;fontColourToolStripMenuItem.Name" xml:space="preserve">
-    <value>fontColourToolStripMenuItem</value>
+  <data name="&gt;&gt;colourSettingsToolStripMenuItem.Name" xml:space="preserve">
+    <value>colourSettingsToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;fontColourToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;colourSettingsToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;backgroundColourToolStripMenuItem.Name" xml:space="preserve">
     <value>backgroundColourToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;backgroundColourToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonColourToolStripMenuItem.Name" xml:space="preserve">
+    <value>buttonColourToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;buttonColourToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fontColourToolStripMenuItem.Name" xml:space="preserve">
+    <value>fontColourToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;fontColourToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">

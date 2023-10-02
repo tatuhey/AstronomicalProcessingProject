@@ -316,6 +316,7 @@ namespace AstronomicalProcessingProject
                     btnKelvin.BackColor = SystemColors.Control;
                     btnRadius.BackColor = SystemColors.Control;
                     btnVelocity.BackColor = SystemColors.Control;
+                    btnButtonColour.BackColor = SystemColors.Control;
                     break;
                 case "dark":
                     btnBackgroundColour.BackColor = SystemColors.ControlDark;
@@ -324,6 +325,7 @@ namespace AstronomicalProcessingProject
                     btnKelvin.BackColor = SystemColors.ControlDark;
                     btnRadius.BackColor = SystemColors.ControlDark;
                     btnVelocity.BackColor = SystemColors.ControlDark;
+                    btnButtonColour.BackColor= SystemColors.ControlDark;
                     break;
             }
         }
@@ -390,6 +392,24 @@ namespace AstronomicalProcessingProject
             }
         }
 
+        private void ButtonColour()
+        {
+            ColorDialog dlg = new ColorDialog();
+
+            if (dlg.ShowDialog() == DialogResult.OK )
+            {
+                Color selectedColour = dlg.Color;
+
+                btnBackgroundColour.BackColor = selectedColour;
+                btnDistance.BackColor = selectedColour;
+                btnFontColour.BackColor = selectedColour;
+                btnKelvin.BackColor = selectedColour;
+                btnRadius.BackColor = selectedColour;
+                btnVelocity.BackColor = selectedColour;
+                btnButtonColour.BackColor = selectedColour;
+            }
+        }
+
         // buttons and menubars
         private void btnFontColour_Click(object sender, EventArgs e)
         {
@@ -401,6 +421,11 @@ namespace AstronomicalProcessingProject
             BackgroundColour();
         }
 
+        private void btnButtonColour_Click(object sender, EventArgs e)
+        {
+            ButtonColour();
+        }
+
         private void fontColourToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FontColour();
@@ -409,6 +434,11 @@ namespace AstronomicalProcessingProject
         private void backgroundColourToolStripMenuItem_Click(object sender, EventArgs e)
         {
             BackgroundColour();
+        }
+
+        private void buttonColourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ButtonColour();
         }
         #endregion
 
@@ -419,6 +449,9 @@ namespace AstronomicalProcessingProject
         string warningText = "Invalid input. Please enter valid numeric values.";
         string warningHeader = "Warning";
 
+
+
         #endregion
+
     }
 }
