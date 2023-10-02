@@ -13,6 +13,8 @@ using System.Resources;
 using System.Globalization;
 using AstronomicalProcessingProject.Properties;
 using System.Runtime.InteropServices;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Diagnostics;
 
 // Raihan Khalil Abdillah
 // 30065695
@@ -23,11 +25,13 @@ namespace AstronomicalProcessingProject
 {
     public partial class ClientApplication : Form
     {
+
         public ClientApplication()
         {
             InitializeComponent();
             ConnectToServer();
             rbLight.Checked = true;
+            englishToolStripMenuItem.Checked = true;
         }
 
         private IAstroContract channel;
@@ -40,22 +44,37 @@ namespace AstronomicalProcessingProject
             channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
         }
 
-        private void AddToListView (int column, string result)
+        #region Calculations
+        // 2.	Create a form with suitable components for UI,
+        // a.Series of textboxes for large numeric data,
+        // b.A listview/datagrid for display of processed information from the server,
+
+        // c.Button(s) to initiate an event and send/receive data.
+        private void AddToListView(int column, string result)
         {
+            // iterate through existing listview items
             bool added = false;
-            foreach(ListViewItem item in lvData.Items)
+            foreach (ListViewItem item in lvData.Items)
             {
+                // check if the specified column is empty
                 if (string.IsNullOrEmpty(item.SubItems[column - 1].Text))
                 {
+                    // add result to the empty column
                     item.SubItems[column - 1].Text = result;
                     added = true;
                     break;
                 }
             }
+
+            // if no empty slot was found in the specified column, create a new row
             if (!added)
             {
                 ListViewItem item = new ListViewItem(new string[4]);
+
+                // add the result to the column in the new row
                 item.SubItems[column - 1].Text = result;
+                
+                // add new row to the listview
                 lvData.Items.Add(item);
             }
         }
@@ -64,34 +83,44 @@ namespace AstronomicalProcessingProject
         {
             double obs;
             double rest;
-            
-            if (double.TryParse(tbObsWave.Text, out obs) && double.TryParse(tbRestWave.Text, out rest)) 
+
+            try
             {
-                double starvelocity = channel.StarVelocity(obs, rest);
-
-                AddToListView(1, starvelocity.ToString());
+                if (double.TryParse(tbObsWave.Text, out obs) && double.TryParse(tbRestWave.Text, out rest))
+                {
+                    double starvelocity = channel.StarVelocity(obs, rest);
+                    AddToListView(1, starvelocity.ToString());
+                }
+                else
+                {
+                    MessageBox.Show(warningText, warningHeader, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid input. Please enter valid numeric values.");
+                MessageBox.Show($"{errorText} \n{ex.Message}", errorHeader, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
 
         private void btnDistance_Click(object sender, EventArgs e)
         {
             double par;
 
-            if (double.TryParse(tbParallaxAngle.Text, out par))
+            try
             {
-                double distance = channel.StarDistance(par);
-
-                AddToListView(2, distance.ToString());
+                if (double.TryParse(tbParallaxAngle.Text, out par))
+                {
+                    double distance = channel.StarDistance(par);
+                    AddToListView(2, distance.ToString());
+                }
+                else
+                {
+                    MessageBox.Show(warningText, warningHeader, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid input. Please enter valid numeric values.");
+                MessageBox.Show($"{errorText} \n{ex.Message}", errorHeader, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -99,83 +128,146 @@ namespace AstronomicalProcessingProject
         {
             double cel;
 
-            if (double.TryParse(tbCelcius.Text, out cel))
+            try
             {
-                double kelvin = channel.TempInKelvin(cel);
-                
-                AddToListView(3, kelvin.ToString());
+                if (double.TryParse(tbCelcius.Text, out cel))
+                {
+                    double kelvin = channel.TempInKelvin(cel);
+                    AddToListView(3, kelvin.ToString());
+                }
+                else
+                {
+                    MessageBox.Show(warningText, warningHeader, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid input. Please enter valid numeric values.");
+                MessageBox.Show($"{errorText} \n{ex.Message}", errorHeader, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void btnRadius_Click(object sender, EventArgs e)
         {
             double mass;
-
-            if (double.TryParse(tbMassBlackhole.Text, out mass))
+            try
             {
-                double rad = channel.EventHorizon(mass);
-
-                AddToListView(4, rad.ToString());
+                if (double.TryParse(tbMassBlackhole.Text, out mass))
+                {
+                    double rad = channel.EventHorizon(mass);
+                    AddToListView(4, rad.ToString());
+                }
+                else
+                {
+                    MessageBox.Show(warningText, warningHeader, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Invalid input. Please enter valid numeric values.");
+                MessageBox.Show($"{errorText} \n{ex.Message}", errorHeader, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+        }
+        #endregion
+
+        #region Languages
+        // 3.	Menu/Button option(s) to change the language and layout for the three different countries.
+
+        private void ChangeLanguage(string language)
+        {
+            switch (language)
+            {
+                case "English":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                    break;
+                case "French":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
+                    break;
+                case "German":
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
+                    break;
+            }
+            // to reset the program so that the translation shows.
+            Controls.Clear();
+            InitializeComponent();
         }
 
-        private void rbDark_CheckedChanged(object sender, EventArgs e)
-        {
-            SetDarkMode();
-            darkModeToolStripMenuItem.Checked = true;
-            lightModeToolStripMenuItem.Checked = false;
-        }
+        // if a button is pressed, corresponding menubar is checked. Since the program has to reset, light mode (default) is checked
+        // to ensure continuity of the flow of the program.
 
-        private void rbLight_CheckedChanged(object sender, EventArgs e)
+        // methods to reduce repetition
+        private void LanguageMenubar(string language)
         {
-            SetLightMode();
+            switch (language)
+            {
+                case "English":
+                    englishToolStripMenuItem.Checked = true;
+                    frenchToolStripMenuItem.Checked = false;
+                    germanToolStripMenuItem.Checked = false;
+                    break;
+                case "French":
+                    frenchToolStripMenuItem.Checked = true;
+                    germanToolStripMenuItem.Checked = false;
+                    englishToolStripMenuItem.Checked = false;
+                    break;
+                case "German":
+                    germanToolStripMenuItem.Checked = true;
+                    englishToolStripMenuItem.Checked = false;
+                    frenchToolStripMenuItem.Checked = false;
+                    break;
+            }
+        }
+        private void DefaultReset()
+        {
+            rbLight.Checked = true;
             lightModeToolStripMenuItem.Checked = true;
             darkModeToolStripMenuItem.Checked = false;
         }
 
-        private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnEnglish_Click(object sender, EventArgs e)
         {
-            SetLightMode();
-            rbLight.Checked = true;
+            ChangeLanguage("English");
+            DefaultReset();
+            LanguageMenubar("English");
         }
 
-        private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnFrench_Click(object sender, EventArgs e)
         {
-            SetDarkMode();
-            rbDark.Checked = true;
+            ChangeLanguage("French");
+            DefaultReset();
+            LanguageMenubar("French");
         }
 
-        private void ColourButtons (string colour)
+        private void btnGerman_Click(object sender, EventArgs e)
         {
-            switch (colour)
-            {
-                case "light":
-                    btnBackgroundColour.BackColor = SystemColors.Control;
-                    btnDistance.BackColor = SystemColors.Control;
-                    btnFontColour.BackColor = SystemColors.Control;
-                    btnKelvin.BackColor = SystemColors.Control;
-                    btnRadius.BackColor = SystemColors.Control;
-                    btnVelocity.BackColor = SystemColors.Control;
-                    break;
-                case "dark":
-                    btnBackgroundColour.BackColor = SystemColors.ControlDark;
-                    btnDistance.BackColor= SystemColors.ControlDark;
-                    btnFontColour.BackColor= SystemColors.ControlDark;
-                    btnKelvin.BackColor= SystemColors.ControlDark;
-                    btnRadius.BackColor = SystemColors.ControlDark;
-                    btnVelocity.BackColor= SystemColors.ControlDark;
-                    break;
-            }
+            ChangeLanguage("German");
+            DefaultReset();
+            LanguageMenubar("German");
         }
 
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage("English");
+            DefaultReset();
+            LanguageMenubar("English");
+        }
+
+        private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage("French");
+            DefaultReset();
+            LanguageMenubar("French");
+        }
+
+        private void germanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage("German");
+            DefaultReset();
+            LanguageMenubar("German");
+        }
+        #endregion
+
+        #region Light/dark modes
+        // 4.	Menu option to change the form’s style (colours and visual appearance).
         private void SetDarkMode()
         {
             ColourButtons("dark");
@@ -192,9 +284,7 @@ namespace AstronomicalProcessingProject
             lvData.BackColor = SystemColors.ControlDark;
 
             lvData.ForeColor = SystemColors.ControlLight;
-
         }
-
 
         private void SetLightMode()
         {
@@ -212,100 +302,63 @@ namespace AstronomicalProcessingProject
             lvData.BackColor = SystemColors.Window;
 
             lvData.ForeColor = SystemColors.ControlText;
-
         }
 
-
-        private void ChangeLanguage(string language)
+        // seperate method because group box does not change the buttons' colour
+        private void ColourButtons(string colour)
         {
-            switch (language)
+            switch (colour)
             {
-                case "English":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                case "light":
+                    btnBackgroundColour.BackColor = SystemColors.Control;
+                    btnDistance.BackColor = SystemColors.Control;
+                    btnFontColour.BackColor = SystemColors.Control;
+                    btnKelvin.BackColor = SystemColors.Control;
+                    btnRadius.BackColor = SystemColors.Control;
+                    btnVelocity.BackColor = SystemColors.Control;
                     break;
-                case "French":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("fr-FR");
-                    break;
-                case "German":
-                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("de-DE");
+                case "dark":
+                    btnBackgroundColour.BackColor = SystemColors.ControlDark;
+                    btnDistance.BackColor = SystemColors.ControlDark;
+                    btnFontColour.BackColor = SystemColors.ControlDark;
+                    btnKelvin.BackColor = SystemColors.ControlDark;
+                    btnRadius.BackColor = SystemColors.ControlDark;
+                    btnVelocity.BackColor = SystemColors.ControlDark;
                     break;
             }
-            Controls.Clear();
-            InitializeComponent();
         }
 
-        private void btnEnglish_Click(object sender, EventArgs e)
+        // if radio buttons used, the menubar is checked too
+        private void rbDark_CheckedChanged(object sender, EventArgs e)
         {
-            ChangeLanguage("English");
-            rbLight.Checked = true;
+            SetDarkMode();
+            darkModeToolStripMenuItem.Checked = true;
+            lightModeToolStripMenuItem.Checked = false;
+        }
+
+        private void rbLight_CheckedChanged(object sender, EventArgs e)
+        {
+            SetLightMode();
             lightModeToolStripMenuItem.Checked = true;
             darkModeToolStripMenuItem.Checked = false;
-
-            englishToolStripMenuItem.Checked = true;
-            frenchToolStripMenuItem.Checked = false;
-            germanToolStripMenuItem.Checked = false;
         }
 
-        private void btnFrench_Click(object sender, EventArgs e)
+        // if menubar is used, the radiobutton is checked too
+        private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ChangeLanguage("French");
+            SetLightMode();
             rbLight.Checked = true;
-            lightModeToolStripMenuItem.Checked = true;
-            darkModeToolStripMenuItem.Checked = false;
-
-            frenchToolStripMenuItem.Checked = true;
-            germanToolStripMenuItem.Checked = false;
-            englishToolStripMenuItem.Checked = false;
         }
 
-        private void btnGerman_Click(object sender, EventArgs e)
+        private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ChangeLanguage("German");
-            rbLight.Checked = true;
-            lightModeToolStripMenuItem.Checked = true;
-            darkModeToolStripMenuItem.Checked = false;
-
-            germanToolStripMenuItem.Checked = true;
-            englishToolStripMenuItem.Checked = false;
-            frenchToolStripMenuItem.Checked = false;
+            SetDarkMode();
+            rbDark.Checked = true;
         }
+        #endregion
 
-        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ChangeLanguage("English");
-            rbLight.Checked = true;
-            lightModeToolStripMenuItem.Checked = true;
-            darkModeToolStripMenuItem.Checked = false;
-
-            englishToolStripMenuItem.Checked = true;
-            frenchToolStripMenuItem.Checked = false;
-            germanToolStripMenuItem.Checked = false;
-        }
-
-        private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ChangeLanguage("French");
-            rbLight.Checked = true;
-            lightModeToolStripMenuItem.Checked = true;
-            darkModeToolStripMenuItem.Checked = false;
-
-            frenchToolStripMenuItem.Checked = true;
-            germanToolStripMenuItem.Checked = false;
-            englishToolStripMenuItem.Checked = false;
-        }
-
-        private void germanToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ChangeLanguage("German");
-            rbLight.Checked = true;
-            lightModeToolStripMenuItem.Checked = true;
-            darkModeToolStripMenuItem.Checked = false;
-
-            germanToolStripMenuItem.Checked = true;
-            englishToolStripMenuItem.Checked = false;
-            frenchToolStripMenuItem.Checked = false;
-        }
-
+        #region Custom colours
+        // 5.	Menu/Button option to select a custom background colour from a colour palette (Color Dialogbox)
         private void FontColour()
         {
             ColorDialog dlg = new ColorDialog();
@@ -334,10 +387,10 @@ namespace AstronomicalProcessingProject
                 gbLanguages.BackColor = selectedColour;
                 gbVisualStyle.BackColor = selectedColour;
                 lvData.BackColor = selectedColour;
-
             }
         }
 
+        // buttons and menubars
         private void btnFontColour_Click(object sender, EventArgs e)
         {
             FontColour();
@@ -357,7 +410,15 @@ namespace AstronomicalProcessingProject
         {
             BackgroundColour();
         }
+        #endregion
+
+        #region Error and Warning Messages - experimental
+
+        string errorText = "Error when processing data.";
+        string errorHeader = "Error";
+        string warningText = "Invalid input. Please enter valid numeric values.";
+        string warningHeader = "Warning";
+
+        #endregion
     }
-
-
 }
