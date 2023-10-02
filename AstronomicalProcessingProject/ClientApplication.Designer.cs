@@ -35,12 +35,8 @@
             this.tbObsWave = new System.Windows.Forms.TextBox();
             this.tbRestWave = new System.Windows.Forms.TextBox();
             this.tbParallaxAngle = new System.Windows.Forms.TextBox();
-            this.tbDistance = new System.Windows.Forms.TextBox();
             this.tbCelcius = new System.Windows.Forms.TextBox();
-            this.tbKelvin = new System.Windows.Forms.TextBox();
             this.tbMassBlackhole = new System.Windows.Forms.TextBox();
-            this.tbScwarzchild = new System.Windows.Forms.TextBox();
-            this.tbStarVelocity = new System.Windows.Forms.TextBox();
             this.btnVelocity = new System.Windows.Forms.Button();
             this.btnDistance = new System.Windows.Forms.Button();
             this.btnKelvin = new System.Windows.Forms.Button();
@@ -50,10 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -61,12 +53,30 @@
             this.rbLight = new System.Windows.Forms.RadioButton();
             this.rbDark = new System.Windows.Forms.RadioButton();
             this.gbVisualStyle = new System.Windows.Forms.GroupBox();
+            this.btnBackgroundColour = new System.Windows.Forms.Button();
+            this.btnFontColour = new System.Windows.Forms.Button();
             this.lvData = new System.Windows.Forms.ListView();
             this.lvColumn1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvColumn2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvColumn3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lvColumn4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.gbLanguages = new System.Windows.Forms.GroupBox();
+            this.gbCalculation = new System.Windows.Forms.GroupBox();
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lightDarkModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lightModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.darkModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backgroundColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.germanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gbVisualStyle.SuspendLayout();
+            this.gbLanguages.SuspendLayout();
+            this.gbCalculation.SuspendLayout();
+            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEnglish
@@ -107,35 +117,15 @@
             resources.ApplyResources(this.tbParallaxAngle, "tbParallaxAngle");
             this.tbParallaxAngle.Name = "tbParallaxAngle";
             // 
-            // tbDistance
-            // 
-            resources.ApplyResources(this.tbDistance, "tbDistance");
-            this.tbDistance.Name = "tbDistance";
-            // 
             // tbCelcius
             // 
             resources.ApplyResources(this.tbCelcius, "tbCelcius");
             this.tbCelcius.Name = "tbCelcius";
             // 
-            // tbKelvin
-            // 
-            resources.ApplyResources(this.tbKelvin, "tbKelvin");
-            this.tbKelvin.Name = "tbKelvin";
-            // 
             // tbMassBlackhole
             // 
             resources.ApplyResources(this.tbMassBlackhole, "tbMassBlackhole");
             this.tbMassBlackhole.Name = "tbMassBlackhole";
-            // 
-            // tbScwarzchild
-            // 
-            resources.ApplyResources(this.tbScwarzchild, "tbScwarzchild");
-            this.tbScwarzchild.Name = "tbScwarzchild";
-            // 
-            // tbStarVelocity
-            // 
-            resources.ApplyResources(this.tbStarVelocity, "tbStarVelocity");
-            this.tbStarVelocity.Name = "tbStarVelocity";
             // 
             // btnVelocity
             // 
@@ -190,29 +180,6 @@
             resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
             // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.BackColor = System.Drawing.SystemColors.Control;
-            this.label6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Name = "label6";
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Name = "label8";
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
             // label10
             // 
             resources.ApplyResources(this.label10, "label10");
@@ -251,11 +218,27 @@
             // 
             // gbVisualStyle
             // 
+            this.gbVisualStyle.Controls.Add(this.btnBackgroundColour);
+            this.gbVisualStyle.Controls.Add(this.btnFontColour);
             this.gbVisualStyle.Controls.Add(this.rbLight);
             this.gbVisualStyle.Controls.Add(this.rbDark);
             resources.ApplyResources(this.gbVisualStyle, "gbVisualStyle");
             this.gbVisualStyle.Name = "gbVisualStyle";
             this.gbVisualStyle.TabStop = false;
+            // 
+            // btnBackgroundColour
+            // 
+            resources.ApplyResources(this.btnBackgroundColour, "btnBackgroundColour");
+            this.btnBackgroundColour.Name = "btnBackgroundColour";
+            this.btnBackgroundColour.UseVisualStyleBackColor = true;
+            this.btnBackgroundColour.Click += new System.EventHandler(this.btnBackgroundColour_Click);
+            // 
+            // btnFontColour
+            // 
+            resources.ApplyResources(this.btnFontColour, "btnFontColour");
+            this.btnFontColour.Name = "btnFontColour";
+            this.btnFontColour.UseVisualStyleBackColor = true;
+            this.btnFontColour.Click += new System.EventHandler(this.btnFontColour_Click);
             // 
             // lvData
             // 
@@ -287,45 +270,134 @@
             // 
             resources.ApplyResources(this.lvColumn4, "lvColumn4");
             // 
+            // gbLanguages
+            // 
+            this.gbLanguages.Controls.Add(this.btnFrench);
+            this.gbLanguages.Controls.Add(this.btnEnglish);
+            this.gbLanguages.Controls.Add(this.btnGerman);
+            resources.ApplyResources(this.gbLanguages, "gbLanguages");
+            this.gbLanguages.Name = "gbLanguages";
+            this.gbLanguages.TabStop = false;
+            // 
+            // gbCalculation
+            // 
+            this.gbCalculation.Controls.Add(this.label10);
+            this.gbCalculation.Controls.Add(this.tbObsWave);
+            this.gbCalculation.Controls.Add(this.tbRestWave);
+            this.gbCalculation.Controls.Add(this.tbParallaxAngle);
+            this.gbCalculation.Controls.Add(this.label13);
+            this.gbCalculation.Controls.Add(this.tbCelcius);
+            this.gbCalculation.Controls.Add(this.label12);
+            this.gbCalculation.Controls.Add(this.tbMassBlackhole);
+            this.gbCalculation.Controls.Add(this.label11);
+            this.gbCalculation.Controls.Add(this.btnVelocity);
+            this.gbCalculation.Controls.Add(this.btnDistance);
+            this.gbCalculation.Controls.Add(this.label5);
+            this.gbCalculation.Controls.Add(this.btnKelvin);
+            this.gbCalculation.Controls.Add(this.label4);
+            this.gbCalculation.Controls.Add(this.btnRadius);
+            this.gbCalculation.Controls.Add(this.label3);
+            this.gbCalculation.Controls.Add(this.label1);
+            this.gbCalculation.Controls.Add(this.label2);
+            resources.ApplyResources(this.gbCalculation, "gbCalculation");
+            this.gbCalculation.Name = "gbCalculation";
+            this.gbCalculation.TabStop = false;
+            // 
+            // menuStrip
+            // 
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewToolStripMenuItem,
+            this.languageToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip, "menuStrip");
+            this.menuStrip.Name = "menuStrip";
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lightDarkModeToolStripMenuItem,
+            this.fontColourToolStripMenuItem,
+            this.backgroundColourToolStripMenuItem});
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            resources.ApplyResources(this.viewToolStripMenuItem, "viewToolStripMenuItem");
+            // 
+            // lightDarkModeToolStripMenuItem
+            // 
+            this.lightDarkModeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lightModeToolStripMenuItem,
+            this.darkModeToolStripMenuItem});
+            this.lightDarkModeToolStripMenuItem.Name = "lightDarkModeToolStripMenuItem";
+            resources.ApplyResources(this.lightDarkModeToolStripMenuItem, "lightDarkModeToolStripMenuItem");
+            // 
+            // lightModeToolStripMenuItem
+            // 
+            this.lightModeToolStripMenuItem.Name = "lightModeToolStripMenuItem";
+            resources.ApplyResources(this.lightModeToolStripMenuItem, "lightModeToolStripMenuItem");
+            this.lightModeToolStripMenuItem.Click += new System.EventHandler(this.lightModeToolStripMenuItem_Click);
+            // 
+            // darkModeToolStripMenuItem
+            // 
+            this.darkModeToolStripMenuItem.Name = "darkModeToolStripMenuItem";
+            resources.ApplyResources(this.darkModeToolStripMenuItem, "darkModeToolStripMenuItem");
+            this.darkModeToolStripMenuItem.Click += new System.EventHandler(this.darkModeToolStripMenuItem_Click);
+            // 
+            // fontColourToolStripMenuItem
+            // 
+            this.fontColourToolStripMenuItem.Name = "fontColourToolStripMenuItem";
+            resources.ApplyResources(this.fontColourToolStripMenuItem, "fontColourToolStripMenuItem");
+            this.fontColourToolStripMenuItem.Click += new System.EventHandler(this.fontColourToolStripMenuItem_Click);
+            // 
+            // backgroundColourToolStripMenuItem
+            // 
+            this.backgroundColourToolStripMenuItem.Name = "backgroundColourToolStripMenuItem";
+            resources.ApplyResources(this.backgroundColourToolStripMenuItem, "backgroundColourToolStripMenuItem");
+            this.backgroundColourToolStripMenuItem.Click += new System.EventHandler(this.backgroundColourToolStripMenuItem_Click);
+            // 
+            // languageToolStripMenuItem
+            // 
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
+            this.frenchToolStripMenuItem,
+            this.germanToolStripMenuItem});
+            this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
+            // 
+            // englishToolStripMenuItem
+            // 
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // frenchToolStripMenuItem
+            // 
+            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
+            resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
+            this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
+            // 
+            // germanToolStripMenuItem
+            // 
+            this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
+            resources.ApplyResources(this.germanToolStripMenuItem, "germanToolStripMenuItem");
+            this.germanToolStripMenuItem.Click += new System.EventHandler(this.germanToolStripMenuItem_Click);
+            // 
             // ClientApplication
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.gbCalculation);
+            this.Controls.Add(this.gbLanguages);
             this.Controls.Add(this.lvData);
             this.Controls.Add(this.gbVisualStyle);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnRadius);
-            this.Controls.Add(this.btnKelvin);
-            this.Controls.Add(this.btnDistance);
-            this.Controls.Add(this.btnVelocity);
-            this.Controls.Add(this.tbStarVelocity);
-            this.Controls.Add(this.tbScwarzchild);
-            this.Controls.Add(this.tbMassBlackhole);
-            this.Controls.Add(this.tbKelvin);
-            this.Controls.Add(this.tbCelcius);
-            this.Controls.Add(this.tbDistance);
-            this.Controls.Add(this.tbParallaxAngle);
-            this.Controls.Add(this.tbRestWave);
-            this.Controls.Add(this.tbObsWave);
-            this.Controls.Add(this.btnGerman);
-            this.Controls.Add(this.btnFrench);
-            this.Controls.Add(this.btnEnglish);
+            this.Controls.Add(this.menuStrip);
+            this.MainMenuStrip = this.menuStrip;
             this.Name = "ClientApplication";
             this.gbVisualStyle.ResumeLayout(false);
             this.gbVisualStyle.PerformLayout();
+            this.gbLanguages.ResumeLayout(false);
+            this.gbCalculation.ResumeLayout(false);
+            this.gbCalculation.PerformLayout();
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,12 +411,8 @@
         private System.Windows.Forms.TextBox tbObsWave;
         private System.Windows.Forms.TextBox tbRestWave;
         private System.Windows.Forms.TextBox tbParallaxAngle;
-        private System.Windows.Forms.TextBox tbDistance;
         private System.Windows.Forms.TextBox tbCelcius;
-        private System.Windows.Forms.TextBox tbKelvin;
         private System.Windows.Forms.TextBox tbMassBlackhole;
-        private System.Windows.Forms.TextBox tbScwarzchild;
-        private System.Windows.Forms.TextBox tbStarVelocity;
         private System.Windows.Forms.Button btnVelocity;
         private System.Windows.Forms.Button btnDistance;
         private System.Windows.Forms.Button btnKelvin;
@@ -354,10 +422,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
@@ -370,6 +434,21 @@
         private System.Windows.Forms.ColumnHeader lvColumn2;
         private System.Windows.Forms.ColumnHeader lvColumn3;
         private System.Windows.Forms.ColumnHeader lvColumn4;
+        private System.Windows.Forms.Button btnBackgroundColour;
+        private System.Windows.Forms.Button btnFontColour;
+        private System.Windows.Forms.GroupBox gbLanguages;
+        private System.Windows.Forms.GroupBox gbCalculation;
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lightDarkModeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lightModeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem darkModeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fontColourToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backgroundColourToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem germanToolStripMenuItem;
     }
 }
 

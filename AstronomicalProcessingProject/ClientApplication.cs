@@ -40,22 +40,36 @@ namespace AstronomicalProcessingProject
             channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
         }
 
+        private void AddToListView (int column, string result)
+        {
+            bool added = false;
+            foreach(ListViewItem item in lvData.Items)
+            {
+                if (string.IsNullOrEmpty(item.SubItems[column - 1].Text))
+                {
+                    item.SubItems[column - 1].Text = result;
+                    added = true;
+                    break;
+                }
+            }
+            if (!added)
+            {
+                ListViewItem item = new ListViewItem(new string[4]);
+                item.SubItems[column - 1].Text = result;
+                lvData.Items.Add(item);
+            }
+        }
+
         private void btnVelocity_Click(object sender, EventArgs e)
         {
             double obs;
             double rest;
-
+            
             if (double.TryParse(tbObsWave.Text, out obs) && double.TryParse(tbRestWave.Text, out rest)) 
             {
-
                 double starvelocity = channel.StarVelocity(obs, rest);
-                tbStarVelocity.Text = starvelocity.ToString();
 
-                ListViewItem item = new ListViewItem();
-                item.SubItems[0].Text = starvelocity.ToString();
-
-                lvData.Items.Add(item);
-
+                AddToListView(1, starvelocity.ToString());
             }
             else
             {
@@ -72,17 +86,8 @@ namespace AstronomicalProcessingProject
             if (double.TryParse(tbParallaxAngle.Text, out par))
             {
                 double distance = channel.StarDistance(par);
-                tbDistance.Text = distance.ToString();
 
-                ListViewItem item = new ListViewItem();
-                item.SubItems.Add(""); // Empty for lvColumn1
-                item.SubItems.Add("");
-                item.SubItems.Add(distance.ToString());
-                item.SubItems.Add("");
-                //item.SubItems[2].Text = distance.ToString();
-
-
-                lvData.Items.Add(item);
+                AddToListView(2, distance.ToString());
             }
             else
             {
@@ -97,16 +102,8 @@ namespace AstronomicalProcessingProject
             if (double.TryParse(tbCelcius.Text, out cel))
             {
                 double kelvin = channel.TempInKelvin(cel);
-                tbKelvin.Text = kelvin.ToString();
-
-                ListViewItem item = new ListViewItem();
-                item.SubItems.Add("");
-                item.SubItems.Add(kelvin.ToString());
-                item.SubItems.Add("");
-                item.SubItems.Add("");
-
-                //item.SubItems[1].Text = kelvin.ToString();
-                lvData.Items.Add(item);
+                
+                AddToListView(3, kelvin.ToString());
             }
             else
             {
@@ -121,17 +118,8 @@ namespace AstronomicalProcessingProject
             if (double.TryParse(tbMassBlackhole.Text, out mass))
             {
                 double rad = channel.EventHorizon(mass);
-                tbScwarzchild.Text = rad.ToString();
 
-                ListViewItem item = new ListViewItem();
-                item.SubItems.Add(""); // Empty for lvColumn2
-                item.SubItems.Add(""); // Empty for lvColumn3
-                item.SubItems.Add("");
-                item.SubItems.Add(rad.ToString());
-
-                //item.SubItems[3].Text = rad.ToString();
-
-                lvData.Items.Add(item);
+                AddToListView(4, rad.ToString());
             }
             else
             {
@@ -142,50 +130,64 @@ namespace AstronomicalProcessingProject
         private void rbDark_CheckedChanged(object sender, EventArgs e)
         {
             SetDarkMode();
+            darkModeToolStripMenuItem.Checked = true;
+            lightModeToolStripMenuItem.Checked = false;
         }
 
         private void rbLight_CheckedChanged(object sender, EventArgs e)
         {
             SetLightMode();
+            lightModeToolStripMenuItem.Checked = true;
+            darkModeToolStripMenuItem.Checked = false;
+        }
+
+        private void lightModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetLightMode();
+            rbLight.Checked = true;
+        }
+
+        private void darkModeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetDarkMode();
+            rbDark.Checked = true;
+        }
+
+        private void ColourButtons (string colour)
+        {
+            switch (colour)
+            {
+                case "light":
+                    btnBackgroundColour.BackColor = SystemColors.Control;
+                    btnDistance.BackColor = SystemColors.Control;
+                    btnFontColour.BackColor = SystemColors.Control;
+                    btnKelvin.BackColor = SystemColors.Control;
+                    btnRadius.BackColor = SystemColors.Control;
+                    btnVelocity.BackColor = SystemColors.Control;
+                    break;
+                case "dark":
+                    btnBackgroundColour.BackColor = SystemColors.ControlDark;
+                    btnDistance.BackColor= SystemColors.ControlDark;
+                    btnFontColour.BackColor= SystemColors.ControlDark;
+                    btnKelvin.BackColor= SystemColors.ControlDark;
+                    btnRadius.BackColor = SystemColors.ControlDark;
+                    btnVelocity.BackColor= SystemColors.ControlDark;
+                    break;
+            }
         }
 
         private void SetDarkMode()
         {
+            ColourButtons("dark");
             this.BackColor = SystemColors.ControlDarkDark;
 
-            label1.BackColor = SystemColors.ControlDarkDark;
-            label2.BackColor = SystemColors.ControlDarkDark;
-            label3.BackColor = SystemColors.ControlDarkDark;
-            label4.BackColor = SystemColors.ControlDarkDark;
-            label5.BackColor = SystemColors.ControlDarkDark;
-            label6.BackColor = SystemColors.ControlDarkDark;
-            label7.BackColor = SystemColors.ControlDarkDark;
-            label8.BackColor = SystemColors.ControlDarkDark;
-            label9.BackColor = SystemColors.ControlDarkDark;
-            label10.BackColor = SystemColors.ControlDarkDark;
-            label11.BackColor = SystemColors.ControlDarkDark;
-            label12.BackColor = SystemColors.ControlDarkDark;
-            label13.BackColor = SystemColors.ControlDarkDark;
+            gbCalculation.ForeColor = SystemColors.ControlLight;
+            gbLanguages.ForeColor = SystemColors.ControlLight;
+            gbVisualStyle.ForeColor = SystemColors.ControlLight;
 
-            label1.ForeColor = SystemColors.ControlLight;
-            label2.ForeColor = SystemColors.ControlLight;
-            label3.ForeColor = SystemColors.ControlLight;
-            label4.ForeColor = SystemColors.ControlLight;
-            label5.ForeColor = SystemColors.ControlLight;
-            label6.ForeColor = SystemColors.ControlLight;
-            label7.ForeColor = SystemColors.ControlLight;
-            label8.ForeColor = SystemColors.ControlLight;
-            label9.ForeColor = SystemColors.ControlLight;
-            label10.ForeColor = SystemColors.ControlLight;
-            label11.ForeColor = SystemColors.ControlLight;
-            label12.ForeColor = SystemColors.ControlLight;
-            label13.ForeColor = SystemColors.ControlLight;
-
-            rbDark.BackColor = SystemColors.ControlDarkDark;
-            rbLight.BackColor = SystemColors.ControlDarkDark;
-
-            rbDark.ForeColor = SystemColors.ControlLight;
-            rbLight.ForeColor = SystemColors.ControlLight;
+            gbCalculation.BackColor = SystemColors.ControlDarkDark;
+            gbLanguages.BackColor = SystemColors.ControlDarkDark;
+            gbVisualStyle.BackColor = SystemColors.ControlDarkDark;
 
             lvData.BackColor = SystemColors.ControlDark;
 
@@ -196,41 +198,16 @@ namespace AstronomicalProcessingProject
 
         private void SetLightMode()
         {
+            ColourButtons("light");
             this.BackColor = SystemColors.Control;
 
-            label1.BackColor = SystemColors.Control;
-            label2.BackColor = SystemColors.Control;
-            label3.BackColor = SystemColors.Control;
-            label4.BackColor = SystemColors.Control;
-            label5.BackColor = SystemColors.Control;
-            label6.BackColor = SystemColors.Control;
-            label7.BackColor = SystemColors.Control;
-            label8.BackColor = SystemColors.Control;
-            label9.BackColor = SystemColors.Control;
-            label10.BackColor = SystemColors.Control;
-            label11.BackColor = SystemColors.Control;
-            label12.BackColor = SystemColors.Control;
-            label13.BackColor = SystemColors.Control;
+            gbCalculation.ForeColor = SystemColors.ControlText;
+            gbLanguages.ForeColor = SystemColors.ControlText;
+            gbVisualStyle.ForeColor = SystemColors.ControlText;
 
-            label1.ForeColor = SystemColors.ControlText;
-            label2.ForeColor = SystemColors.ControlText;
-            label3.ForeColor = SystemColors.ControlText;
-            label4.ForeColor = SystemColors.ControlText;
-            label5.ForeColor = SystemColors.ControlText;
-            label6.ForeColor = SystemColors.ControlText;
-            label7.ForeColor = SystemColors.ControlText;
-            label8.ForeColor = SystemColors.ControlText;
-            label9.ForeColor = SystemColors.ControlText;
-            label10.ForeColor = SystemColors.ControlText;
-            label11.ForeColor = SystemColors.ControlText;
-            label12.ForeColor = SystemColors.ControlText;
-            label13.ForeColor = SystemColors.ControlText;
-
-            rbDark.BackColor = SystemColors.Control;
-            rbLight.BackColor = SystemColors.Control;
-
-            rbDark.ForeColor = SystemColors.ControlText;
-            rbLight.ForeColor = SystemColors.ControlText;
+            gbCalculation.BackColor = SystemColors.Control;
+            gbLanguages.BackColor = SystemColors.Control;
+            gbVisualStyle.BackColor = SystemColors.Control;
 
             lvData.BackColor = SystemColors.Window;
 
@@ -257,33 +234,128 @@ namespace AstronomicalProcessingProject
             InitializeComponent();
         }
 
-        private void NewButtons()
+        private void btnEnglish_Click(object sender, EventArgs e)
         {
-            CustomButton btnEnglish = new CustomButton();
-            btnEnglish.Text = "English";
-            btnEnglish.OutlineColor = Color.White; // Set the outline color
-            btnEnglish.FillColor = Color.Black;    // Set the fill color
-            btnEnglish.Click += btnEnglish_Click;
-            // Add the button to your form's controls collection
-            this.Controls.Add(btnEnglish);
+            ChangeLanguage("English");
+            rbLight.Checked = true;
+            lightModeToolStripMenuItem.Checked = true;
+            darkModeToolStripMenuItem.Checked = false;
+
+            englishToolStripMenuItem.Checked = true;
+            frenchToolStripMenuItem.Checked = false;
+            germanToolStripMenuItem.Checked = false;
         }
 
         private void btnFrench_Click(object sender, EventArgs e)
         {
             ChangeLanguage("French");
             rbLight.Checked = true;
-        }
+            lightModeToolStripMenuItem.Checked = true;
+            darkModeToolStripMenuItem.Checked = false;
 
-        private void btnEnglish_Click(object sender, EventArgs e)
-        {
-            ChangeLanguage("English");
-            rbLight.Checked = true;
+            frenchToolStripMenuItem.Checked = true;
+            germanToolStripMenuItem.Checked = false;
+            englishToolStripMenuItem.Checked = false;
         }
 
         private void btnGerman_Click(object sender, EventArgs e)
         {
             ChangeLanguage("German");
             rbLight.Checked = true;
+            lightModeToolStripMenuItem.Checked = true;
+            darkModeToolStripMenuItem.Checked = false;
+
+            germanToolStripMenuItem.Checked = true;
+            englishToolStripMenuItem.Checked = false;
+            frenchToolStripMenuItem.Checked = false;
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage("English");
+            rbLight.Checked = true;
+            lightModeToolStripMenuItem.Checked = true;
+            darkModeToolStripMenuItem.Checked = false;
+
+            englishToolStripMenuItem.Checked = true;
+            frenchToolStripMenuItem.Checked = false;
+            germanToolStripMenuItem.Checked = false;
+        }
+
+        private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage("French");
+            rbLight.Checked = true;
+            lightModeToolStripMenuItem.Checked = true;
+            darkModeToolStripMenuItem.Checked = false;
+
+            frenchToolStripMenuItem.Checked = true;
+            germanToolStripMenuItem.Checked = false;
+            englishToolStripMenuItem.Checked = false;
+        }
+
+        private void germanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeLanguage("German");
+            rbLight.Checked = true;
+            lightModeToolStripMenuItem.Checked = true;
+            darkModeToolStripMenuItem.Checked = false;
+
+            germanToolStripMenuItem.Checked = true;
+            englishToolStripMenuItem.Checked = false;
+            frenchToolStripMenuItem.Checked = false;
+        }
+
+        private void FontColour()
+        {
+            ColorDialog dlg = new ColorDialog();
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                Color selectedColour = dlg.Color;
+
+                gbCalculation.ForeColor = selectedColour;
+                gbLanguages.ForeColor = selectedColour;
+                gbVisualStyle.ForeColor = selectedColour;
+                lvData.ForeColor = selectedColour;
+            }
+        }
+
+        private void BackgroundColour()
+        {
+            ColorDialog dlg = new ColorDialog();
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                Color selectedColour = dlg.Color;
+
+                this.BackColor = selectedColour;
+                gbCalculation.BackColor = selectedColour;
+                gbLanguages.BackColor = selectedColour;
+                gbVisualStyle.BackColor = selectedColour;
+                lvData.BackColor = selectedColour;
+
+            }
+        }
+
+        private void btnFontColour_Click(object sender, EventArgs e)
+        {
+            FontColour();
+        }
+
+        private void btnBackgroundColour_Click(object sender, EventArgs e)
+        {
+            BackgroundColour();
+        }
+
+        private void fontColourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontColour();
+        }
+
+        private void backgroundColourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BackgroundColour();
         }
     }
 

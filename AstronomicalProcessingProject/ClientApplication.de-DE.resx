@@ -117,39 +117,62 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="btnEnglish.Text" xml:space="preserve">
-    <value>Englisch</value>
-  </data>
-  <data name="btnFrench.Text" xml:space="preserve">
-    <value>Französisch</value>
-  </data>
-  <data name="btnGerman.Text" xml:space="preserve">
-    <value>Deutsch</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnEnglish.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAAAgCAMAAACVQ462AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAkFBMVEXVR17wv8f////U2uZfc6AEJGsB
+        IWlWa5v0z9XIEC4CImpOZJbN0+L44OTecILJFDHWS2LxxMv33OHcaHvJEzDS2OVVapoDI2qUosCJmLlW
+        bJze4uz66u3poKzbYnbaYHTjhJT11Nr88fPi5u5YbZzrqrT22t7kipnaYXXmlaL77vH65uryx87XUGbI
+        EjD32t+7brXxAAAAB3RJTUUH5wMCAQcisd+O1QAAAUdJREFUSEvtldlywjAMRUVKm5huCRCWbqYFukP/
+        /++qyGpiW3ImM+1j7wsg33uwJ5IDMMoanYxPzyLlWWFIRZZzqdXk/OLy6toYGIExZaUj0gCMT2dzl4Sf
+        L6h6sWQHKQVYLuo2joCatyIROgDjQQK601DBO4gGkG7Qis4sAZoTASlEDNBdBNAXQ0BqnwzQDD4gFfcA
+        ErHqAOtUHAG5p5v17d39g7WbRzJ2gCevul3t2E4CKibUAnoERY/2DrDnn6pwFn6nf8BfAPhpqBr0GLkf
+        VA1qJO5IErYyFZ9frH19e48ArvoRtzLPBAqHiYyfB2OO9iscpmAlGCb+FHExztEqx7wLRRjEhSIcjQig
+        LypXmuJCQIodA3Rnc62LopMEaAio/cKwF0uQoEaqSmPms+nwVxshXAoBcvNOKUB4EOB/F/E+QIeoym/1
+        OUgIw41GPwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnFrench.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAAArCAYAAADIWo5HAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5wgQDyETpIGOxAAAAI5JREFU
+        aEPt0LENwzAMRFFtoNmTyht5CFfewMgCSqOS3bEx8Aj8nvfGGJ/V3XU952q+3/c47zFXdwCqAWkAAAAA
+        sP9uOwAAAACoBqQBqAakAQAAAMD+u+0AAAAAoBqQBqAakAYAAAAA+++2AwAAAIBqQBqAakAaAAAAAOy/
+        2w4AAAAAqgFpAKoBae8BmOsP7cLIgFIlo5gAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnGerman.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAAAmBAMAAACG6oCqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAElBMVEUAAABKAADdAAD0igD/zgD///80
+        cvsrAAAAB3RJTUUH5wcNFAgGvUqhxgAAACVJREFUOMtjGAWDBwgSAAxKBMCoAvopMCYAGFwIgFEFdFLg
+        4gIAILmhgZ+4aN0AAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btnVelocity.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 23</value>
   </data>
   <data name="btnVelocity.Text" xml:space="preserve">
-    <value>Berechnen Sie</value>
+    <value>Berechnen</value>
   </data>
   <data name="btnDistance.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 23</value>
   </data>
   <data name="btnDistance.Text" xml:space="preserve">
-    <value>Berechnen Sie</value>
+    <value>Berechnen</value>
   </data>
   <data name="btnKelvin.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 23</value>
   </data>
   <data name="btnKelvin.Text" xml:space="preserve">
-    <value>Berechnen Sie</value>
+    <value>Berechnen</value>
   </data>
   <data name="btnRadius.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 23</value>
   </data>
   <data name="btnRadius.Text" xml:space="preserve">
-    <value>Berechnen Sie</value>
+    <value>Berechnen</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 13</value>
@@ -175,35 +198,26 @@
   <data name="label5.Text" xml:space="preserve">
     <value>Masse des Schwarzen Lochs (M)</value>
   </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Schwarzschild-Radius (R)</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 13</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Sterngeschwindigkeit (G)</value>
-  </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>251, 26</value>
+    <value>190, 20</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Stern-Geschwindigkeit</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 26</value>
+    <value>141, 20</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
     <value>Sternentfernung</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 26</value>
+    <value>172, 20</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
     <value>Temperatur in Kelvin</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 26</value>
+    <value>139, 20</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
     <value>Ereignishorizont</value>
@@ -220,13 +234,85 @@
   <data name="rbDark.Text" xml:space="preserve">
     <value>Dunkler Modus</value>
   </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Entfernung (E)</value>
+  <data name="gbVisualStyle.Text" xml:space="preserve">
+    <value>Farbe</value>
+  </data>
+  <data name="btnBackgroundColour.Text" xml:space="preserve">
+    <value>Hintergrundfarbe</value>
+  </data>
+  <data name="btnFontColour.Text" xml:space="preserve">
+    <value>Schriftfarbe</value>
   </data>
   <data name="lvColumn1.Text" xml:space="preserve">
     <value>Sternentfernung (E)</value>
   </data>
   <data name="lvColumn4.Text" xml:space="preserve">
     <value>Schwarzschild-Radius (R)</value>
+  </data>
+  <data name="gbLanguages.Text" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="gbCalculation.Text" xml:space="preserve">
+    <value>Berechnung</value>
+  </data>
+  <data name="viewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="viewToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ansicht</value>
+  </data>
+  <data name="lightDarkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 22</value>
+  </data>
+  <data name="lightDarkModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Heller/Dunkler Modus</value>
+  </data>
+  <data name="lightModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="lightModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Heller Modus</value>
+  </data>
+  <data name="darkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="darkModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dunkler Modus</value>
+  </data>
+  <data name="fontColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 22</value>
+  </data>
+  <data name="fontColourToolStripMenuItem.Text" xml:space="preserve">
+    <value>Schriftfarbe</value>
+  </data>
+  <data name="backgroundColourToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 22</value>
+  </data>
+  <data name="backgroundColourToolStripMenuItem.Text" xml:space="preserve">
+    <value>Hintergrundfarbe</value>
+  </data>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Englische</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>Französische</value>
+  </data>
+  <data name="germanToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="germanToolStripMenuItem.Text" xml:space="preserve">
+    <value>Deutsche</value>
   </data>
 </root>
