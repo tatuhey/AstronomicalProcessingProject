@@ -65,12 +65,6 @@
     <EmbeddedResource Include="ClientApplication.fr-FR.resx">
       <DependentUpon>ClientApplication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClientApplication.fr-GF.resx">
-      <DependentUpon>ClientApplication.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClientApplication.fr-PF.resx">
-      <DependentUpon>ClientApplication.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ClientApplication.resx">
       <DependentUpon>ClientApplication.cs</DependentUpon>
     </EmbeddedResource>

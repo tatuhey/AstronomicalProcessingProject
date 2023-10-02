@@ -221,12 +221,12 @@
             // 
             // gbVisualStyle
             // 
+            resources.ApplyResources(this.gbVisualStyle, "gbVisualStyle");
             this.gbVisualStyle.Controls.Add(this.btnButtonColour);
             this.gbVisualStyle.Controls.Add(this.btnBackgroundColour);
             this.gbVisualStyle.Controls.Add(this.btnFontColour);
             this.gbVisualStyle.Controls.Add(this.rbLight);
             this.gbVisualStyle.Controls.Add(this.rbDark);
-            resources.ApplyResources(this.gbVisualStyle, "gbVisualStyle");
             this.gbVisualStyle.Name = "gbVisualStyle";
             this.gbVisualStyle.TabStop = false;
             // 
@@ -253,6 +253,7 @@
             // 
             // lvData
             // 
+            resources.ApplyResources(this.lvData, "lvData");
             this.lvData.BackColor = System.Drawing.SystemColors.Window;
             this.lvData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.lvColumn1,
@@ -260,7 +261,6 @@
             this.lvColumn3,
             this.lvColumn4});
             this.lvData.HideSelection = false;
-            resources.ApplyResources(this.lvData, "lvData");
             this.lvData.Name = "lvData";
             this.lvData.UseCompatibleStateImageBehavior = false;
             this.lvData.View = System.Windows.Forms.View.Details;
@@ -283,15 +283,16 @@
             // 
             // gbLanguages
             // 
+            resources.ApplyResources(this.gbLanguages, "gbLanguages");
             this.gbLanguages.Controls.Add(this.btnFrench);
             this.gbLanguages.Controls.Add(this.btnEnglish);
             this.gbLanguages.Controls.Add(this.btnGerman);
-            resources.ApplyResources(this.gbLanguages, "gbLanguages");
             this.gbLanguages.Name = "gbLanguages";
             this.gbLanguages.TabStop = false;
             // 
             // gbCalculation
             // 
+            resources.ApplyResources(this.gbCalculation, "gbCalculation");
             this.gbCalculation.Controls.Add(this.label10);
             this.gbCalculation.Controls.Add(this.tbObsWave);
             this.gbCalculation.Controls.Add(this.tbRestWave);
@@ -310,98 +311,97 @@
             this.gbCalculation.Controls.Add(this.label3);
             this.gbCalculation.Controls.Add(this.label1);
             this.gbCalculation.Controls.Add(this.label2);
-            resources.ApplyResources(this.gbCalculation, "gbCalculation");
             this.gbCalculation.Name = "gbCalculation";
             this.gbCalculation.TabStop = false;
             // 
             // menuStrip
             // 
+            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewToolStripMenuItem,
             this.languageToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip, "menuStrip");
             this.menuStrip.Name = "menuStrip";
             // 
             // viewToolStripMenuItem
             // 
+            resources.ApplyResources(this.viewToolStripMenuItem, "viewToolStripMenuItem");
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lightDarkModeToolStripMenuItem,
             this.colourSettingsToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            resources.ApplyResources(this.viewToolStripMenuItem, "viewToolStripMenuItem");
             // 
             // lightDarkModeToolStripMenuItem
             // 
+            resources.ApplyResources(this.lightDarkModeToolStripMenuItem, "lightDarkModeToolStripMenuItem");
             this.lightDarkModeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lightModeToolStripMenuItem,
             this.darkModeToolStripMenuItem});
             this.lightDarkModeToolStripMenuItem.Name = "lightDarkModeToolStripMenuItem";
-            resources.ApplyResources(this.lightDarkModeToolStripMenuItem, "lightDarkModeToolStripMenuItem");
             // 
             // lightModeToolStripMenuItem
             // 
-            this.lightModeToolStripMenuItem.Name = "lightModeToolStripMenuItem";
             resources.ApplyResources(this.lightModeToolStripMenuItem, "lightModeToolStripMenuItem");
+            this.lightModeToolStripMenuItem.Name = "lightModeToolStripMenuItem";
             this.lightModeToolStripMenuItem.Click += new System.EventHandler(this.lightModeToolStripMenuItem_Click);
             // 
             // darkModeToolStripMenuItem
             // 
-            this.darkModeToolStripMenuItem.Name = "darkModeToolStripMenuItem";
             resources.ApplyResources(this.darkModeToolStripMenuItem, "darkModeToolStripMenuItem");
+            this.darkModeToolStripMenuItem.Name = "darkModeToolStripMenuItem";
             this.darkModeToolStripMenuItem.Click += new System.EventHandler(this.darkModeToolStripMenuItem_Click);
             // 
             // colourSettingsToolStripMenuItem
             // 
+            resources.ApplyResources(this.colourSettingsToolStripMenuItem, "colourSettingsToolStripMenuItem");
             this.colourSettingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.backgroundColourToolStripMenuItem,
             this.buttonColourToolStripMenuItem,
             this.fontColourToolStripMenuItem});
             this.colourSettingsToolStripMenuItem.Name = "colourSettingsToolStripMenuItem";
-            resources.ApplyResources(this.colourSettingsToolStripMenuItem, "colourSettingsToolStripMenuItem");
             // 
             // backgroundColourToolStripMenuItem
             // 
-            this.backgroundColourToolStripMenuItem.Name = "backgroundColourToolStripMenuItem";
             resources.ApplyResources(this.backgroundColourToolStripMenuItem, "backgroundColourToolStripMenuItem");
+            this.backgroundColourToolStripMenuItem.Name = "backgroundColourToolStripMenuItem";
             this.backgroundColourToolStripMenuItem.Click += new System.EventHandler(this.backgroundColourToolStripMenuItem_Click);
             // 
             // buttonColourToolStripMenuItem
             // 
-            this.buttonColourToolStripMenuItem.Name = "buttonColourToolStripMenuItem";
             resources.ApplyResources(this.buttonColourToolStripMenuItem, "buttonColourToolStripMenuItem");
+            this.buttonColourToolStripMenuItem.Name = "buttonColourToolStripMenuItem";
             this.buttonColourToolStripMenuItem.Click += new System.EventHandler(this.buttonColourToolStripMenuItem_Click);
             // 
             // fontColourToolStripMenuItem
             // 
-            this.fontColourToolStripMenuItem.Name = "fontColourToolStripMenuItem";
             resources.ApplyResources(this.fontColourToolStripMenuItem, "fontColourToolStripMenuItem");
+            this.fontColourToolStripMenuItem.Name = "fontColourToolStripMenuItem";
             this.fontColourToolStripMenuItem.Click += new System.EventHandler(this.fontColourToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
             this.frenchToolStripMenuItem,
             this.germanToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             // 
             // englishToolStripMenuItem
             // 
-            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
             resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
+            this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // frenchToolStripMenuItem
             // 
-            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
             resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
+            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
             this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
             // 
             // germanToolStripMenuItem
             // 
-            this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
             resources.ApplyResources(this.germanToolStripMenuItem, "germanToolStripMenuItem");
+            this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
             this.germanToolStripMenuItem.Click += new System.EventHandler(this.germanToolStripMenuItem_Click);
             // 
             // ClientApplication
