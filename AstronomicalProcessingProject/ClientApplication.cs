@@ -284,6 +284,8 @@ namespace AstronomicalProcessingProject
             lvData.BackColor = SystemColors.ControlDark;
 
             lvData.ForeColor = SystemColors.ControlLight;
+
+            statusStrip.BackColor = SystemColors.ControlDark;
         }
 
         private void SetLightMode()
@@ -302,6 +304,8 @@ namespace AstronomicalProcessingProject
             lvData.BackColor = SystemColors.Window;
 
             lvData.ForeColor = SystemColors.ControlText;
+
+            statusStrip.BackColor = SystemColors.Window;
         }
 
         // seperate method because group box does not change the buttons' colour
@@ -389,6 +393,7 @@ namespace AstronomicalProcessingProject
                 gbLanguages.BackColor = selectedColour;
                 gbVisualStyle.BackColor = selectedColour;
                 lvData.BackColor = selectedColour;
+                statusStrip.BackColor = selectedColour;
             }
         }
 

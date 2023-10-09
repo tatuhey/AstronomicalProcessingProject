@@ -76,10 +76,13 @@
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.germanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.gbVisualStyle.SuspendLayout();
             this.gbLanguages.SuspendLayout();
             this.gbCalculation.SuspendLayout();
             this.menuStrip.SuspendLayout();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEnglish
@@ -404,11 +407,26 @@
             this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
             this.germanToolStripMenuItem.Click += new System.EventHandler(this.germanToolStripMenuItem_Click);
             // 
+            // statusStrip
+            // 
+            resources.ApplyResources(this.statusStrip, "statusStrip");
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip.Name = "statusStrip";
+            // 
+            // toolStripStatusLabel
+            // 
+            resources.ApplyResources(this.toolStripStatusLabel, "toolStripStatusLabel");
+            this.toolStripStatusLabel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripStatusLabel.Margin = new System.Windows.Forms.Padding(5, 3, 0, 2);
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            // 
             // ClientApplication
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.gbCalculation);
             this.Controls.Add(this.gbLanguages);
             this.Controls.Add(this.lvData);
@@ -423,6 +441,8 @@
             this.gbCalculation.PerformLayout();
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -477,6 +497,8 @@
         private System.Windows.Forms.ToolStripMenuItem backgroundColourToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem buttonColourToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fontColourToolStripMenuItem;
+        private System.Windows.Forms.StatusStrip statusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
     }
 }
 
