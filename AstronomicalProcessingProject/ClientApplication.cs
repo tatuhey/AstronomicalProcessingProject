@@ -81,23 +81,28 @@ namespace AstronomicalProcessingProject
 
         private void btnVelocity_Click(object sender, EventArgs e)
         {
+            // Variables to store input values
             double obs;
             double rest;
 
             try
             {
+                // Check if the input values can be parsed as doubles
                 if (double.TryParse(tbObsWave.Text, out obs) && double.TryParse(tbRestWave.Text, out rest))
                 {
+                    // Call a method to calculate star velocity and add it to the ListView
                     double starvelocity = channel.StarVelocity(obs, rest);
-                    AddToListView(1, starvelocity.ToString());
+                    AddToListView(1, starvelocity.ToString() + " m/s");
                 }
                 else
                 {
+                    // Show a warning message if input parsing fails
                     MessageBox.Show(warningText, warningHeader, MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception ex)
             {
+                // Handle exceptions and show an error message if something goes wrong
                 MessageBox.Show($"{errorText} \n{ex.Message}", errorHeader, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -111,7 +116,7 @@ namespace AstronomicalProcessingProject
                 if (double.TryParse(tbParallaxAngle.Text, out par))
                 {
                     double distance = channel.StarDistance(par);
-                    AddToListView(2, distance.ToString());
+                    AddToListView(2, distance.ToString() + " parsecs");
                 }
                 else
                 {
@@ -133,7 +138,7 @@ namespace AstronomicalProcessingProject
                 if (double.TryParse(tbCelcius.Text, out cel))
                 {
                     double kelvin = channel.TempInKelvin(cel);
-                    AddToListView(3, kelvin.ToString());
+                    AddToListView(3, kelvin.ToString() + " K");
                 }
                 else
                 {
@@ -153,8 +158,8 @@ namespace AstronomicalProcessingProject
             {
                 if (double.TryParse(tbMassBlackhole.Text, out mass))
                 {
-                    double rad = channel.EventHorizon(mass);
-                    AddToListView(4, rad.ToString());
+                    double rad = Math.Round(channel.EventHorizon(mass), 2);
+                    AddToListView(4, rad.ToString("E") + " meter");
                 }
                 else
                 {

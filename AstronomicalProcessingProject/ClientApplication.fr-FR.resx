@@ -169,31 +169,31 @@
     <value>Calculer</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 13</value>
+    <value>157, 13</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Longueur d'onde observée</value>
+    <value>Longueur d'onde observée (nm)</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 13</value>
+    <value>154, 13</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Longueur d'onde au repos</value>
+    <value>Longueur d'onde au repos (nm)</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 13</value>
+    <value>135, 13</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Angle de parallaxe (P)</value>
+    <value>Angle de parallaxe (arcsec)</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>591, 43</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 13</value>
+    <value>115, 13</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Masse du trou noir (M)</value>
+    <value>Masse du trou noir (kg)</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 20</value>
@@ -247,10 +247,10 @@
     <value>Couleur</value>
   </data>
   <data name="lvColumn1.Text" xml:space="preserve">
-    <value>Vitesse de l'étoile (V)</value>
+    <value>Vitesse de l'étoile (m/s)</value>
   </data>
   <data name="lvColumn4.Text" xml:space="preserve">
-    <value>Rayon de Schwarzschild (R)</value>
+    <value>Rayon de Schwarzschild (m)</value>
   </data>
   <data name="gbLanguages.Text" xml:space="preserve">
     <value>Langue</value>

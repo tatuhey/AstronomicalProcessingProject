@@ -175,28 +175,28 @@
     <value>Berechnen</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 13</value>
+    <value>153, 13</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Beobachtete Wellenlänge</value>
+    <value>Beobachtete Wellenlänge (nm)</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 13</value>
+    <value>118, 13</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Ruhe-Wellenlänge</value>
+    <value>Ruhe-Wellenlänge (nm)</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 13</value>
+    <value>127, 13</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Parallaxenwinkel (P)</value>
+    <value>Parallaxenwinkel (arcsec)</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 13</value>
+    <value>167, 13</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Masse des Schwarzen Lochs (M)</value>
+    <value>Masse des Schwarzen Lochs (kg)</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>190, 20</value>
@@ -247,10 +247,10 @@
     <value>Schriftfarbe</value>
   </data>
   <data name="lvColumn1.Text" xml:space="preserve">
-    <value>Sternentfernung (E)</value>
+    <value>Sternentfernung (m/s)</value>
   </data>
   <data name="lvColumn4.Text" xml:space="preserve">
-    <value>Schwarzschild-Radius (R)</value>
+    <value>Schwarzschild-Radius (m)</value>
   </data>
   <data name="gbLanguages.Text" xml:space="preserve">
     <value>Sprache</value>

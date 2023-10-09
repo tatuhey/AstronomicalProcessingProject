@@ -363,7 +363,7 @@
     <value>395, 16</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Observed Wavelength</value>
+    <value>Observed Wavelength (nm)</value>
   </data>
   <data name="&gt;&gt;btnEnglish.Parent" xml:space="preserve">
     <value>gbLanguages</value>
@@ -405,7 +405,7 @@
 </value>
   </data>
   <data name="lvColumn4.Text" xml:space="preserve">
-    <value>Schwarzchild Radius (R)</value>
+    <value>Schwarzchild Radius (m)</value>
   </data>
   <data name="btnGerman.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -585,10 +585,10 @@
     <value>label5</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 13</value>
+    <value>137, 13</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 13</value>
+    <value>127, 13</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -621,7 +621,7 @@
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 13</value>
+    <value>115, 13</value>
   </data>
   <data name="gbCalculation.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 27</value>
@@ -783,7 +783,7 @@
     <value>100, 20</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Parallax Angle (P)</value>
+    <value>Parallax Angle (arcsec)</value>
   </data>
   <data name="&gt;&gt;btnRadius.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -804,7 +804,7 @@
     <value>4</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Rest Wavelength (λo)</value>
+    <value>Rest Wavelength λo (nm)</value>
   </data>
   <data name="&gt;&gt;tbObsWave.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -819,7 +819,7 @@
     <value>2</value>
   </data>
   <data name="lvColumn1.Text" xml:space="preserve">
-    <value>Star Velocity (V)</value>
+    <value>Star Velocity (m/s)</value>
   </data>
   <data name="btnVelocity.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 133</value>
@@ -1156,7 +1156,7 @@
     <value>75, 23</value>
   </data>
   <data name="lvColumn2.Text" xml:space="preserve">
-    <value>Distance (D)</value>
+    <value>Distance (parsec)</value>
   </data>
   <data name="btnDistance.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -1195,7 +1195,7 @@
     <value>toolStripStatusLabel</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Mass of the Blackhole (M)</value>
+    <value>Mass of the Blackhole (kg)</value>
   </data>
   <data name="&gt;&gt;label11.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1375,7 +1375,7 @@
     <value>German</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 13</value>
+    <value>133, 13</value>
   </data>
   <data name="&gt;&gt;backgroundColourToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
